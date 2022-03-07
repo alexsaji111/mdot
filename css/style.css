@@ -9361,3 +9361,28 @@ input[type='number'],
 textarea {
     font-size: 13px !important;
 }
+
+input:focus {
+    box-shadow: none !important;
+    border: 1px solid #ced4da !important;
+}
+
+select:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+textarea {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+a:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
