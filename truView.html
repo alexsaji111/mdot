@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruView</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://transloadit.edgly.net/releases/uppy/v1.6.0/uppy.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+</head>
+
+<body>
+
+    <!--Header section start-->
+    <div class="header-fixed">
+        <div class="container-fluid">
+            <div class="row p-3 align-items-center">
+                <div class="col-6 p-0">
+                    <a href="#"> <img src="./image/tripmemo_logo_black.png" class="img-fluid " width="150" alt=""></a>
+                </div>
+                <div class="col-6 p-0 d-flex justify-content-end">
+                    <div class="dropdown">
+                        <a class="d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                            <span class="user-logo "> <img src="./image/lady.jpg" class="img-fluid" alt=""> </span>
+                            <i class="fas fa-chevron-down pl-2 fs-10 text-color"></i>
+                        </a>
+
+                        <ul class="dropdown-menu logged-dropdown" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">Delete Account</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Header section end-->
+
+    <!--Main section start-->
+    <div class="container px-0">
+        <div class="mb-5 mt-5 mb-5 pb-5">
+            <div class="box mx-3 px-3">
+                <div class="row px-3 py-3 d-flex justify-content-between  border-bottom">
+                    <img class="img-fluid tru-img" src="./image/TruView-05.png" width="120" alt="">
+                    <span class="text-right">
+                        <img class="img-fluid" src="./images/Asset 1.svg" alt="">
+                        <p class="fs-16 fw-600 ">True Reviews</p>
+                        
+                    </span>
+                </div>
+                <div class="row px-3 my-4 mb-4">
+                    <p class="blue fs-13 text-right w-100 p-2">TV 253/23/4</p>
+                    <div class="stay-details-inner w-100 px-3">
+                        <p class="fs-17 fw-600 text-color border-bottom w-100 pb-1 mt-3">Stay Details</p>
+                        <div class="stay-details">
+                            <table class="my-3">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="blue">Accommodation Name: <span class="fs-13 text-color">Rajamala Resort, Munnar, India</span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="blue"> Check-In Date: <br><span class="fs-13 text-color"> 25-07-2021</span></p>
+                                        </td>
+                                        <td>
+                                            <p class="blue"> Check-Out Date: <span class="fs-13 text-color"> 28-07-2021</span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="blue">Room Category(s):<span class="fs-13 text-color">  Deluxe & Double Room A/C </span></p>
+                                        </td>
+                                        <td>
+                                            <p class="blue">Restaurant Facility:<span class="fs-13 text-color">  Availed</span></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row px-3 mt-4">
+                    <p class="fs-17 fw-600 text-color border-bottom w-100 pb-1 mb-3">My Ratings</p>
+                    <div class="col-6 p-0 my-3 d-flex align-items-center">
+                        <p>1. Location of the Property</p>
+                    </div>
+                    <div class="col-6 p-0 my-3 d-flex align-items-center">
+
+
+                        <div class="str_Rating_detail">
+                            <div id="" data-rating="0" data-rateyo-read-only="false" class="rateYo bookrating"></div>
+                            <input type="hidden" class="bookId" value="17">
+                        </div>
+
+
+                    </div>
+                    <div class="col-6 p-0 my-3 d-flex align-items-center">
+                        <p>2. Cleanliness & Hygiene:</p>
+                    </div>
+                    <div class="col-6 p-0 my-3 d-flex align-items-center">
+
+                        <div class="str_Rating_detail">
+                            <div id="" data-rating="0" data-rateyo-read-only="false" class="rateYo bookrating"></div>
+                            <input type="hidden" class="bookId" value="17">
+                        </div>
+                    </div>
+                    <div class="col-6 p-0 my-3 d-flex align-items-center">
+                        <p>3. Staff Friendliness & Service:</p>
+                    </div>
+                    <div class="col-6 p-0 my-3 d-flex align-items-center">
+                        <div class="str_Rating_detail">
+                            <div id="" data-rating="0" data-rateyo-read-only="false" class="rateYo bookrating"></div>
+                            <input type="hidden" class="bookId" value="17">
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 p-0 my-3 d-flex align-items-center">
+                        <p>4. Sleep Quality:</p>
+                    </div>
+                    <div class="col-6 p-0 my-3 d-flex align-items-center">
+                        <div class="str_Rating_detail">
+                            <div id="" data-rating="0" data-rateyo-read-only="false" class="rateYo bookrating"></div>
+                            <input type="hidden" class="bookId" value="17" data>
+                        </div>
+                    </div>
+
+                    <div class="col-6 p-0 my-3 d-flex align-items-center">
+                        <p>5. How likely are you to recommmend this stay?</p>
+                    </div>
+                    <div class="col-6 p-0 my-3 d-flex align-items-center">
+                        <div class="str_Rating_detail">
+                            <div id="" data-rating="0" data-rateyo-read-only="false" class="rateYo bookrating"></div>
+                            <input type="hidden" class="bookId" value="17">
+                        </div>
+                    </div>
+                </div>
+                <div class="row px-3">
+                    <p class="fs-17 fw-600 text-color border-bottom w-100 pb-1 my-3">My Review</p>
+                    <div class="wrapper col-12 p-0 mt-2">
+                        <div id="the-count" class="mb-2 text-right">
+                            <span id="current" class="fs-12 text-gray">0</span>
+                            <span id="maximum" class="fs-12 text-gray">/ 300</span>
+                        </div>
+                        <textarea name="the-textarea" rows="4" id="the-textarea" maxlength="300" placeholder="Write your true review here." class="form-control w-100 fs-1"></textarea>
+
+                    </div>
+                    <div class="business-logo mt-3">
+
+                        <div class=" my-2 col-4 pl-0">
+                            <div class="control-group file-upload" id="file-upload1">
+                                <div class="image-box text-center">
+                                    <p class="camera-thumb"> <img class="img-fluid" src="./image/camera.png" width="50" alt=""></p>
+                                    <img src="" alt="" class="demo-img">
+                                </div>
+                                <div class="controls" style="display: none;">
+                                    <input type="file" name="contact_image_1" id="files" multiple />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="disclaimer mb-4 mt-3 p-0 border-none">
+                    <span class="">
+                            <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                            <label for="styled-checkbox-1" class="text-color">Disclaimer: I hereby declare that this review is entirely based on my experience with the said service provider and may not be considered a testament to their service quality. I warrant that the information I have provided herewith is true to the best of my knowledge and is, in no way, biased, levered or paid.</label>
+                        </span>
+                    <div class="text-center mt-5">
+                        <button type="submit" class="submit-btn fs-13" data-toggle="modal" data-target="#exampleModal">Preview & Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Main section end-->
+
+    <!-----Bottom Navabr Start----->
+    <nav class="scroll-nav">
+        <div class="bottom-nav d-flex justify-content-around " id="navbar">
+            <ul class="m-0 p-0 onboard-nav">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="text-center nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="enq-msg">
+                                <img class="img-fluid" width="20" src="./image/trolley.svg" alt="">
+                                <span class="badge">10</span>
+                            </span>
+                            <p class="text-gray fs-12 pt-1">My Orders</p>
+                        </a>
+                        <div class="dropdown-menu my-orders" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item border-bottom fs-13" href="#" data-toggle="modal" data-target="#enquiryPop">
+                                <div class="d-flex align-items-center ">
+                                    <span class="pop-icons">
+                                    <img class="img-fluid" src="./image/enquiry.svg" alt="">
+                                    <span class="badge-count">02</span>
+                                    </span>
+                                    <p class="pl-3">Enquiries</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item border-bottom fs-13" href="#" data-toggle="modal" data-target="#bookings">
+                                <div class="d-flex align-items-center ">
+                                    <span class="pop-icons">
+                                    <img class="img-fluid" src="./image/bookings.svg" alt="">
+                                    <span class="badge-count">10</span>
+                                    </span>
+                                    <p class="pl-3">Bookings</p>
+
+                                </div>
+                            </a>
+                            <a class="dropdown-item border-bottom fs-13" href="#" data-toggle="modal" data-target="#quotes">
+                                <div class="d-flex align-items-center">
+                                    <span class="pop-icons">
+                                    <img class="img-fluid" src="./image/quotation.svg" alt="">
+                                    <span class="badge-count">06</span>
+                                    </span>
+                                    <p class="pl-3">Quotes</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item fs-13" href="#" data-toggle="modal" data-target="#truView">
+                                <div class="d-flex align-items-center ">
+                                    <span class="pop-icons">
+                                    <img class="img-fluid" src="./image/TruView.svg" alt="">
+                                    
+                                    </span>
+                                    <p class="pl-3">TruViews</p>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="./travelCentral.html" class="text-center nav-link">
+                        <img class="img-fluid mb-1" width="22" src="./image/travel central.svg" alt="">
+                        <p class="text-gray fs-12">Travel Central</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./businessType.html" class="text-center nav-link active">
+                        <img class="img-fluid mb-1" width="20" src="./image/business_original.svg" alt="">
+                        <p class="text-gray fs-12">Add Business</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./travellertimeline.html" class="text-center nav-link">
+                        <img class="img-fluid mb-1" width="20" src="./image/timeline-green.svg" alt="">
+                        <p class="text-gray fs-12">Timeline</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-----Bottom Navabr end----->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-true-head d-flex align-items-center">
+                    <h5 class="modal-title fs-14" id="exampleModalLabel">Preview</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="close-mark">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container px-0">
+                        <div class=" mb-5 mt-5">
+                            <div class="box">
+                                <div class="row px-3 py-3 d-flex justify-content-between  border-bottom">
+                                    <img class="img-fluid tru-img" src="./images/TruView-05.png" width="120" alt="">
+                                    <span class="text-right">
+                                        <img class="img-fluid" src="./images/Asset 1.svg" alt="">
+                                        <p class="fs-16 fw-600 ">True Reviews</p>
+                                        
+                                    </span>
+                                </div>
+                                <div class="row px-3 my-4 mb-4">
+                                    <p class="blue fs-13 text-right w-100 p-2">TV 253/23/4</p>
+                                    <div class="stay-details-inner w-100 px-3">
+                                        <p class="fs-17 fw-600 text-color border-bottom w-100 pb-1 mt-3">Stay Details</p>
+                                        <div class="stay-details">
+                                            <table class="my-3">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="blue">Accommodation Name: <span class="fs-13 text-color">Rajamala Resort, Munnar, India</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="blue"> Check-In Date: <br><span class="fs-13 text-color"> 25-07-2021</span></p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="blue"> Check-Out Date: <br><span class="fs-13 text-color"> 28-07-2021</span></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="blue">Room Category(s):<span class="fs-13 text-color">  Deluxe & Double Room A/C </span></p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="blue">Restaurant Facility:<span class="fs-13 text-color">  Availed</span></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row px-3 mt-4">
+                                    <p class="fs-17 fw-600 text-color border-bottom w-100 pb-1 mb-3">My Ratings</p>
+                                    <div class="col-6 p-0 my-2 d-flex align-items-center">
+                                        <p>1. Location of the Property</p>
+                                    </div>
+                                    <div class="col-6 p-0 my-2 d-flex align-items-center justify-content-end">
+                                        <div class="star-prev">
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star gray"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-0 my-2 d-flex align-items-center">
+                                        <p>2. Cleanliness & Hygiene:</p>
+                                    </div>
+                                    <div class="col-6 p-0 my-2 d-flex align-items-center justify-content-end">
+
+                                        <div class="star-prev">
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star gray"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-0 my-2 d-flex align-items-center">
+                                        <p>3. Staff Friendliness & Service:</p>
+                                    </div>
+                                    <div class="col-6 p-0 my-2 d-flex align-items-center justify-content-end">
+                                        <div class="star-prev">
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star gray"></i>
+                                            <i class="fa fa-star gray"></i>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-6 p-0 my-2 d-flex align-items-center">
+                                        <p>4. Sleep Quality:</p>
+                                    </div>
+                                    <div class="col-6 p-0 my-2 d-flex align-items-center justify-content-end">
+                                        <div class="star-prev">
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star gray"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 p-0 my-2 d-flex align-items-center">
+                                        <p>5. How likely are you to recommmend this stay?</p>
+                                    </div>
+                                    <div class="col-6 p-0 my-2 d-flex align-items-center justify-content-end">
+                                        <div class="star-prev">
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star yellow"></i>
+                                            <i class="fa fa-star gray"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row px-3">
+                                    <p class="fs-17 fw-600 text-color border-bottom w-100 pb-1 mt-2">My Review</p>
+                                    <div class="business-logo mt-3">
+
+                                        <p class="pb-2">Photo(s)</p>
+                                        <div class="photos row">
+                                            <div class=" my-2 col-4">
+                                                <img class="img-fluid prev-img" src="./images/surfing.png" alt="">
+                                            </div>
+                                            <div class=" my-2 col-4">
+                                                <img class="img-fluid prev-img" src="./images/surfing.png" alt="">
+                                            </div>
+                                            <div class=" col-4 my-2">
+                                                <img class="img-fluid prev-img" src="./images/surfing.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper col-12 p-0 mt-4">
+                                        <textarea name="the-textarea" rows="4" id="the-textarea" maxlength="300" placeholder="Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed unde praesentium assumenda neque, modi ea reprehenderit quos, molestiae distinctio magnam itaque! Dolore dolorem cumque suscipit blanditiis asperiores mollitia ea."
+                                            disabled class="form-control w-100"></textarea>
+
+                                    </div>
+                                    <div class="disclaimer my-4">
+                                        <span class="">
+                                            <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" checked value="value1">
+                                            <label for="styled-checkbox-2" class="text-color">Disclaimer: I hereby declare that this review is entirely based on my experience with the said service provider and may not be considered a testament to their service quality. I warrant that the information I have provided herewith is true to the best of my knowledge and is, in no way, biased, levered or paid.</label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="submit-btn fs-13" data-toggle="modal" data-dismiss="modal" data-target="#trueSubmit">Submit</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="trueSubmit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header modal-true-head">
+                    <h5 class="modal-title fs-14 fw-600" id="exampleModalLabel">TruView submitted successfully!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="close-mark">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p class="py-3">Thank you for your time. Check out your Polo Wallet to see how much you've earned!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close-btn fs-13" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="./js/truview.js"></script>
+</body>
+
+</html>

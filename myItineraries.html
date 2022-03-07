@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Itineraries</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header-fixed">
+        <div class="container-fluid">
+            <div class="row p-3 align-items-center">
+                <div class="col-6 p-0">
+                    <a href="#"> <img src="./image/tripmemo_logo_black.png" class="img-fluid " width="150" alt=""></a>
+                </div>
+                <div class="col-6 p-0 d-flex justify-content-end">
+                    <div class="dropdown">
+                        <a class="d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                            <span class="user-logo "> <img src="./image/lady.jpg" class="img-fluid" alt=""> </span>
+                            <i class="fas fa-chevron-down pl-2 fs-10 text-color"></i>
+                        </a>
+
+                        <ul class="dropdown-menu logged-dropdown-traveller" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">Delete Account</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Header-->
+
+    <!------------Main body start----------------->
+    <div class="">
+        <nav class="mt-4 mx-3 journal-top">
+            <div class="nav nav-pills d-flex justify-content-between text-center align-items-center" id="nav-tab" role="tablist">
+                <button class="nav-link active fs-12 rounded p-2 w-50" id="nav-home-tab" data-toggle="tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Created Itineraries</button>
+                <a href="./main.html" class="nav-link fs-12  rounded p-2 w-50" id="nav-profile-tab" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-plus" aria-hidden="true"></i> New</a>
+
+            </div>
+        </nav>
+        <div class="mt-3">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="container-fluid pb-5 mt-4">
+
+                        <div class="box p-2 trash-parent" data-toggle="modal" data-target="#itineraryOverview">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="img-fluid h-100 w-100 itinerary-list-img" src="./image/surfing.png" alt="">
+                                </div>
+                                <div class="col-8 pl-0 ">
+                                    <p class="fw-600 fs-13">Nepal Cultural Tour</p>
+
+                                    <p class="text-color fs-12">Duration: <span class="text-gray">6 Nights & 7 Days</span></p>
+                                    <p class="text-color fs-12">Prime theme: <span class="text-gray">Culture & History</span></p>
+                                    <p class="text-color fs-12">Tour Class: <span class="text-gray">Luxury</span></p>
+                                </div>
+                            </div>
+                            <div class="border-top mt-2 pt-2">
+                                <div class=" d-flex justify-content-between align-items-center">
+                                    <p>Created on: <span>17/08/2021</span></p>
+                                    <div class="d-flex">
+                                        <div class="iti-edit mr-2">
+                                            <a href="#" data-toggle="modal" data-target="#editreview"> <img src="./image/edit-icon.svg" class="img-fluid w-100" alt=""></a>
+                                        </div>
+                                        <div class="iti-trash mr-2">
+                                            <a href="" data-toggle="modal" data-target="#dltItinerary"> <img src="./image/trash.svg" class="img-fluid" width="16" alt=""></a>
+                                        </div>
+                                        <div class="iti-share">
+                                            <a class="" href="#"><img class="img-fluid" src="./image/share-01.svg" width="15" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box p-2 trash-parent2 mt-3" data-toggle="modal" data-target="#itineraryOverview">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="img-fluid h-100 w-100 itinerary-list-img" src="./image/surfing.png" alt="">
+                                </div>
+                                <div class="col-8 pl-0 ">
+
+                                    <p class="fw-600 fs-13">Nepal Cultural Tour</p>
+
+                                    <p class="text-color fs-12">Duration: <span class="text-gray">6 Nights & 7 Days</span></p>
+                                    <p class="text-color fs-12">Prime theme: <span class="text-gray">Culture & History</span></p>
+                                    <p class="text-color fs-12">Tour Class: <span class="text-gray">Luxury</span></p>
+                                </div>
+                            </div>
+                            <div class="border-top mt-2 pt-2">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Created on: <span>17/08/2021</span></p>
+                                    <div class="d-flex">
+                                        <div class="iti-edit mr-2">
+                                            <a href="#" data-toggle="modal" data-target="#editreview"><img src="./image/edit-icon.svg" class="img-fluid w-100" alt=""></a>
+                                        </div>
+                                        <div class="iti-trash mr-2">
+                                            <a href="" data-toggle="modal" data-target="#dltItinerary"> <img src="./image/trash.svg" class="img-fluid" width="16" alt=""></a>
+                                        </div>
+                                        <div class="iti-share">
+                                            <a class="" href="#"><img class="img-fluid" src="./image/share-01.svg" width="15" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box p-2 trash-parent3 mt-3 mb-5" data-toggle="modal" data-target="#itineraryOverview">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="img-fluid h-100 w-100 itinerary-list-img" src="./image/surfing.png" alt="">
+                                </div>
+                                <div class="col-8 pl-0 ">
+                                    <p class="fw-600 fs-13">Nepal Cultural Tour</p>
+
+                                    <p class="text-color fs-12">Duration: <span class="text-gray">6 Nights & 7 Days</span></p>
+                                    <p class="text-color fs-12">Prime theme: <span class="text-gray">Culture & History</span></p>
+                                    <p class="text-color fs-12">Tour Class: <span class="text-gray">Luxury</span></p>
+                                </div>
+                            </div>
+                            <div class="border-top mt-2 pt-2">
+                                <div class=" d-flex justify-content-between align-items-center">
+                                    <p>Created on: <span>17/08/2021</span></p>
+                                    <div class="d-flex">
+                                        <div class="iti-edit mr-2">
+                                            <a href="#" data-toggle="modal" data-target="#editreview"><img src="./image/edit-icon.svg" class="img-fluid w-100" alt=""></a>
+                                        </div>
+                                        <div class="iti-trash mr-2">
+                                            <a href="" data-toggle="modal" data-target="#dltItinerary"> <img src="./image/trash.svg" class="img-fluid" width="16" alt=""></a>
+                                        </div>
+                                        <div class="iti-share">
+                                            <a class="" href="#"><img class="img-fluid" src="./image/share-01.svg" width="15" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------Main body end----------------->
+
+    <!-----Bottom Navabr Start----->
+    <nav class="scroll-nav">
+        <div class="bottom-nav d-flex justify-content-around " id="navbar">
+            <ul class="m-0 p-0 onboard-nav">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="text-center nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="enq-msg">
+                                <img class="img-fluid" width="20" src="./image/trolley.svg" alt="">
+                                <span class="badge">10</span>
+                            </span>
+                            <p class="text-gray fs-12 pt-1">My Orders</p>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item border-bottom fs-13" href="#" data-toggle="modal" data-target="#enquiryPop">
+                                <div class="d-flex align-items-center ">
+                                    <span class="pop-icons">
+                                    <img class="img-fluid" src="./image/enquiry.svg" alt="">
+                                    <span class="badge-count">02</span>
+                                    </span>
+                                    <p class="pl-3">Enquiries</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item border-bottom fs-13" href="#" data-toggle="modal" data-target="#bookings">
+                                <div class="d-flex align-items-center ">
+                                    <span class="pop-icons">
+                                    <img class="img-fluid" src="./image/bookings.svg" alt="">
+                                    <span class="badge-count">10</span>
+                                    </span>
+                                    <p class="pl-3">Bookings</p>
+
+                                </div>
+                            </a>
+                            <a class="dropdown-item border-bottom fs-13" href="#" data-toggle="modal" data-target="#quotes">
+                                <div class="d-flex align-items-center">
+                                    <span class="pop-icons">
+                                    <img class="img-fluid" src="./image/quotation.svg" alt="">
+                                    <span class="badge-count">06</span>
+                                    </span>
+                                    <p class="pl-3">Quotes</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item fs-13" href="#" data-toggle="modal" data-target="#truView">
+                                <div class="d-flex align-items-center ">
+                                    <span class="pop-icons">
+                                    <img class="img-fluid" src="./image/TruView.svg" alt="">
+                                    
+                                    </span>
+                                    <p class="pl-3">TruView</p>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="./travelCentral.html" class="text-center nav-link">
+                        <img class="img-fluid mb-1" width="22" src="./image/travel-central-green.svg" alt="">
+                        <p class="text-gray fs-12">Travel Central</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./businessType.html" class="text-center nav-link active">
+                        <img class="img-fluid mb-1" width="20" src="./image/business_original.svg" alt="">
+                        <p class="text-gray fs-12">Add Business</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./travellertimeline.html" class="text-center nav-link">
+                        <img class="img-fluid mb-1" width="20" src="./image/edit.svg" alt="">
+                        <p class="text-gray fs-12">Timeline</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-----Bottom Navabr end----->
+
+    <!--floating chat icon-->
+    <div class="chatbox">
+        <a data-target="#my-chat" data-toggle="modal"><img class="img-fluid chat-img-float" src="./image/mail-inbox-app.png" width="28" alt=""></a>
+    </div>
+
+    <!--floating chat icon-->
+    <div id="my-chat" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header chat-header p-0">
+                    <nav class="w-100">
+                        <div class="nav nav-pills d-flex justify-content-between" id="nav-tab" role="tablist">
+                            <button class="nav-link w-50 active chat-radius" id="nav-home-tab" data-toggle="tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Travellers</button>
+                            <button class="nav-link w-50 chat-radius1" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Enablers</button>
+                        </div>
+                    </nav>
+                    <div class="chat-close">
+                        <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                <div class="lists mt-2" id="list0">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="list-img">
+                                                <img class="img-fluid" src="./image/explorer-hat.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9 pl-0">
+                                            <div class="chat-content">
+                                                <span class="d-flex justify-content-between align-items-center">
+                                                <p class="fw-600 text-color">Inzamam Nizam</p>
+                                                <p class="fs-10 new-list">New</p>
+                                            </span>
+                                                <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>TN, India</p>
+                                                <span class="d-flex justify-content-between align-items-center">
+                                                    <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                                                    <span class="d-flex flex-column align-items-end">
+                                                        <p class="fs-10">Today</p>
+                                                        <p class="fs-10">10:30 AM</p>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                <div class="lists mt-3" id="list1">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="list-img">
+                                                <img class="img-fluid" src="./image/explorer-hat.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9 pl-0">
+                                            <div class="chat-content">
+                                                <span class="d-flex justify-content-between align-items-center">
+                                                <p class="fw-600 text-color">Subbaya Krishna</p>
+                                                <p class="fs-10 new-list">New</p>
+                                            </span>
+                                                <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Kerala, India</p>
+                                                <span class="d-flex justify-content-between align-items-center">
+                                                    <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                                                    <span class="d-flex flex-column align-items-end">
+                                                    <p class="fs-10">Today</p>
+                                                    <p class="fs-10">10:30 AM</p>
+                                                </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                <div class="lists mt-3 mb-1" id="list1">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="list-img">
+                                                <img class="img-fluid" src="./image/explorer-hat.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9 pl-0">
+                                            <div class="chat-content">
+                                                <span class="d-flex justify-content-between align-items-center">
+                                                <p class="fw-600 text-color">Xavier Binu</p>
+                                                <p class="fs-10 new-list">New</p>
+                                            </span>
+                                                <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                <span class="d-flex justify-content-between align-items-center">
+                                                    <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                                                    <span class="d-flex flex-column align-items-end">
+                                                        <p class="fs-10">Today</p>
+                                                        <p class="fs-10">10:30 AM</p>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                <div class="lists mt-2" id="list0">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="list-img">
+                                                <img class="img-fluid" src="./image/explorer-hat.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9 pl-0">
+                                            <div class="chat-content">
+                                                <span class="d-flex justify-content-between align-items-center">
+                                                <p class="fw-600 text-color">Inzamam Nizam</p>
+                                                <p class="fs-10 new-list">New</p>
+                                            </span>
+                                                <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>TN, India</p>
+                                                <span class="d-flex justify-content-between align-items-center">
+                                                    <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                                                    <span class="d-flex flex-column align-items-end">
+                                                        <p class="fs-10">Today</p>
+                                                        <p class="fs-10">10:30 AM</p>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                <div class="lists mt-3" id="list1">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="list-img">
+                                                <img class="img-fluid" src="./image/explorer-hat.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9 pl-0">
+                                            <div class="chat-content">
+                                                <span class="d-flex justify-content-between align-items-center">
+                                                <p class="fw-600 text-color">Subbaya Krishna</p>
+                                                <p class="fs-10 new-list">New</p>
+                                            </span>
+                                                <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Kerala, India</p>
+                                                <span class="d-flex justify-content-between align-items-center">
+                                                    <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                                                    <span class="d-flex flex-column align-items-end">
+                                                    <p class="fs-10">Today</p>
+                                                    <p class="fs-10">10:30 AM</p>
+                                                </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                <div class="lists mt-3 mb-1" id="list1">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="list-img">
+                                                <img class="img-fluid" src="./image/explorer-hat.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9 pl-0">
+                                            <div class="chat-content">
+                                                <span class="d-flex justify-content-between align-items-center">
+                                                <p class="fw-600 text-color">Xavier Binu</p>
+                                                <p class="fs-10 new-list">New</p>
+                                            </span>
+                                                <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                <span class="d-flex justify-content-between align-items-center">
+                                                    <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                                                    <span class="d-flex flex-column align-items-end">
+                                                        <p class="fs-10">Today</p>
+                                                        <p class="fs-10">10:30 AM</p>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--floating chat icon-->
+
+    <!--------------Enquiry popup---------------->
+    <div class="modal fade" id="enquiryPop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-2 d-flex align-items-center enq-header px-3">
+                    <h5 class="modal-title fs-13 fw-300" id="exampleModalLabel">My Enquiries</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white ">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <nav class="mt-4 journal-top">
+                            <div class="nav nav-pills d-flex justify-content-between text-center" id="nav-tab" role="tablist">
+                                <button class="nav-link active fs-12 rounded p-2" id="nav-home1-tab" data-toggle="tab" data-target="#nav-home1" type="button" role="tab" aria-controls="nav-home1" aria-selected="true">Accommodation</button>
+                                <button class="nav-link fs-12  rounded p-2" id="nav-profile1-tab" data-toggle="tab" data-target="#nav-profile1" type="button" role="tab" aria-controls="nav-profile1" aria-selected="false">Guiders</button>
+                                <button class="nav-link fs-12  rounded p-2" id="nav-contact1-tab" data-toggle="tab" data-target="#nav-contact1" type="button" role="tab" aria-controls="nav-contact1" aria-selected="false">Rentals</button>
+                            </div>
+                        </nav>
+                        <div class="mt-3">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home1" role="tabpanel" aria-labelledby="nav-home1-tab">
+                                    <div class="">
+                                        <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                            <div class="lists mt-3 mb-1" id="list1">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 pl-0">
+                                                        <div class="chat-content">
+                                                            <span class="d-flex justify-content-between align-items-center">
+                        <p class="fw-600 text-color">Rajamala Resort</p>
+                        <p class="fs-10 new-list">New</p>
+                    </span>
+                                                            <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                            <span class="d-flex justify-content-between align-items-center">
+                            <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                            <span class="d-flex flex-column align-items-end">
+                                <p class="fs-10">Today</p>
+                                <p class="fs-10">10:30 AM</p>
+                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                            <div class="lists mt-3 mb-1" id="list1">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 pl-0">
+                                                        <div class="chat-content">
+                                                            <span class="d-flex justify-content-between align-items-center">
+                        <p class="fw-600 text-color">West Loch Resort</p>
+                        <p class="fs-10 new-list">New</p>
+                    </span>
+                                                            <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                            <span class="d-flex justify-content-between align-items-center">
+                            <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                            <span class="d-flex flex-column align-items-end">
+                                <p class="fs-10">Today</p>
+                                <p class="fs-10">10:30 AM</p>
+                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                            <div class="lists mt-3 mb-1" id="list1">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 pl-0">
+                                                        <div class="chat-content">
+                                                            <span class="d-flex justify-content-between align-items-center">
+                        <p class="fw-600 text-color">Hilltop Resort</p>
+                        <p class="fs-10 new-list">New</p>
+                    </span>
+                                                            <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                            <span class="d-flex justify-content-between align-items-center">
+                            <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                            <span class="d-flex flex-column align-items-end">
+                                <p class="fs-10">Today</p>
+                                <p class="fs-10">10:30 AM</p>
+                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                            <div class="lists mt-3 mb-1" id="list1">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 pl-0">
+                                                        <div class="chat-content">
+                                                            <span class="d-flex justify-content-between align-items-center">
+                        <p class="fw-600 text-color">Lavender Resort</p>
+                        <p class="fs-10 new-list">New</p>
+                    </span>
+                                                            <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                            <span class="d-flex justify-content-between align-items-center">
+                            <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                            <span class="d-flex flex-column align-items-end">
+                                <p class="fs-10">Today</p>
+                                <p class="fs-10">10:30 AM</p>
+                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-profile1" role="tabpanel" aria-labelledby="nav-profile1-tab">
+                                    <div class="">
+
+                                        <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                            <div class="lists mt-3 mb-1" id="list1">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 pl-0">
+                                                        <div class="chat-content">
+                                                            <span class="d-flex justify-content-between align-items-center">
+                        <p class="fw-600 text-color">Subbayya Krishna</p>
+                        <p class="fs-10 new-list">New</p>
+                    </span>
+                                                            <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                            <span class="d-flex justify-content-between align-items-center">
+                            <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                            <span class="d-flex flex-column align-items-end">
+                                <p class="fs-10">Today</p>
+                                <p class="fs-10">10:30 AM</p>
+                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                            <div class="lists mt-3 mb-1" id="list1">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 pl-0">
+                                                        <div class="chat-content">
+                                                            <span class="d-flex justify-content-between align-items-center">
+                        <p class="fw-600 text-color">Inzamam Nizam</p>
+                        <p class="fs-10 new-list">New</p>
+                    </span>
+                                                            <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                            <span class="d-flex justify-content-between align-items-center">
+                            <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                            <span class="d-flex flex-column align-items-end">
+                                <p class="fs-10">Today</p>
+                                <p class="fs-10">10:30 AM</p>
+                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                            <div class="lists mt-3 mb-1" id="list1">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 pl-0">
+                                                        <div class="chat-content">
+                                                            <span class="d-flex justify-content-between align-items-center">
+                        <p class="fw-600 text-color">Xavier Binu</p>
+                        <p class="fs-10 new-list">New</p>
+                    </span>
+                                                            <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                            <span class="d-flex justify-content-between align-items-center">
+                            <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                            <span class="d-flex flex-column align-items-end">
+                                <p class="fs-10">Today</p>
+                                <p class="fs-10">10:30 AM</p>
+                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="nav-contact1-tab">
+                                    <div class="">
+                                        <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                            <div class="lists mt-3 mb-1" id="list1">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 pl-0">
+                                                        <div class="chat-content">
+                                                            <span class="d-flex justify-content-between align-items-center">
+                        <p class="fw-600 text-color">Rajamala Resort</p>
+                        <p class="fs-10 new-list">New</p>
+                    </span>
+                                                            <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                            <span class="d-flex justify-content-between align-items-center">
+                            <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                            <span class="d-flex flex-column align-items-end">
+                                <p class="fs-10">Today</p>
+                                <p class="fs-10">10:30 AM</p>
+                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                            <div class="lists mt-3 mb-1" id="list1">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 pl-0">
+                                                        <div class="chat-content">
+                                                            <span class="d-flex justify-content-between align-items-center">
+                        <p class="fw-600 text-color">West Loch Resort</p>
+                        <p class="fs-10 new-list">New</p>
+                    </span>
+                                                            <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                            <span class="d-flex justify-content-between align-items-center">
+                            <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                            <span class="d-flex flex-column align-items-end">
+                                <p class="fs-10">Today</p>
+                                <p class="fs-10">10:30 AM</p>
+                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                            <div class="lists mt-3 mb-1" id="list1">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 pl-0">
+                                                        <div class="chat-content">
+                                                            <span class="d-flex justify-content-between align-items-center">
+                        <p class="fw-600 text-color">Hilltop Resort</p>
+                        <p class="fs-10 new-list">New</p>
+                    </span>
+                                                            <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                            <span class="d-flex justify-content-between align-items-center">
+                            <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                            <span class="d-flex flex-column align-items-end">
+                                <p class="fs-10">Today</p>
+                                <p class="fs-10">10:30 AM</p>
+                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                            <div class="lists mt-3 mb-1" id="list1">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 pl-0">
+                                                        <div class="chat-content">
+                                                            <span class="d-flex justify-content-between align-items-center">
+                        <p class="fw-600 text-color">Lavender Resort</p>
+                        <p class="fs-10 new-list">New</p>
+                    </span>
+                                                            <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Karnataka, India</p>
+                                                            <span class="d-flex justify-content-between align-items-center">
+                            <p class="fs-12">Lorem, ipsum dolor sit amet</p>
+                            <span class="d-flex flex-column align-items-end">
+                                <p class="fs-10">Today</p>
+                                <p class="fs-10">10:30 AM</p>
+                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------Enquiry popup---------------->
+
+    <!------------------Enquiry chat screen------------------------->
+    <div class="modal fade" id="enquiryPopChat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog mt-3 modal-dialog-centered pb-3 modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-none chat-screen-header w-100 pt-4">
+                    <div class="my-2 w-100 chatscreen-data" id="list1">
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <div class="list-img2">
+                                    <img class="img-fluid" src="./image/hotel-logo.jpg" alt="profile-picture">
+                                </div>
+                            </div>
+                            <div class="col-9 pl-0">
+                                <div class="chat-content">
+                                    <span class="d-flex justify-content-between align-items-center">
+                                    <p class="fw-600">Rajamala Resort</p>
+                                    <p class="fs-12">UEN1105</p>
+                                </span>
+                                    <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Kerala, India</p>
+                                    <p class="fs-12 mt-1"><img class="img-fluid" src="./image/phone-call.svg" width="15" alt=""> +91 987 654 3220</p>
+                                    <p class="fs-12 mt-1"><img class="img-fluid" src="./image/email.svg" width="15" alt=""> rajamalaresort@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="close chat-close3" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body chat-height p-0">
+                    <div class=" stamping mt-2">
+                        <p class="p-1 fs-10">requested to cancel booking [BK7] on 09-Sept-2021 5:17 PM</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                        <div class="col-2 pl-0 chat-img">
+                            <img class="img-fluid" width="" src="./image/hotel-logo.jpg" alt="profile-picture">
+                        </div>
+                        <div class="col-10 pl-0">
+                            <div class="bubble">
+                                <p class="fw-600 fs-12">Rajamala Resort</p>
+                                <p class="">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <p class="fs-10 text-gray py-1">07-Sep-2021 10:30 AM</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 ">
+                        <div class="col-10  d-flex flex-column justify-content-end align-items-end">
+                            <div class="bubble-right">
+                                <p class="fw-600 fs-12">Subbaya</p>
+                                <p class="">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <p class="fs-10 text-gray py-1">07-Sep-2021 10:31 AM</p>
+                        </div>
+                        <div class="col-2 pl-0 chat-img">
+                            <img class="img-fluid" width="" src="./image/explorer-hat.svg" alt="profile-picture">
+                        </div>
+                    </div>
+                    <div class=" stamping mt-2">
+                        <p class="p-1 fs-10">requested to cancel booking [BK8] on 10-Sept-2021 5:17 PM</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                        <div class="col-2 pl-0 chat-img">
+                            <img class="img-fluid" width="" src="./image/hotel-logo.jpg" alt="profile-picture">
+                        </div>
+                        <div class="col-10 pl-0">
+                            <div class="bubble">
+                                <p class="fw-600 fs-12">Rajamala Resort</p>
+                                <p class="">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <p class="fs-10 text-gray py-1">07-Sep-2021 10:30 AM</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 ">
+                        <div class="col-10  d-flex flex-column justify-content-end align-items-end">
+                            <div class="bubble-right">
+                                <p class="fw-600 fs-12">Subbaya</p>
+                                <p class="">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <p class="fs-10 text-gray py-1">07-Sep-2021 10:31 AM</p>
+                        </div>
+                        <div class="col-2 pl-0 chat-img">
+                            <img class="img-fluid" width="" src="./image/explorer-hat.svg" alt="profile-picture">
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                        <div class="col-2 pl-0 chat-img">
+                            <img class="img-fluid" width="" src="./image/hotel-logo.jpg" alt="profile-picture">
+                        </div>
+                        <div class="col-10 pl-0">
+                            <div class="bubble">
+                                <a href="#" data-toggle="modal" data-target="#quotesDetails" data-dismiss="modal"> <img class="img-fluid" src="./image/invoice.svg" width="50" alt=""></a>
+                            </div>
+                            <p class="fs-10 text-gray py-1">07-Sep-2021 10:30 AM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex  pt-3 pb-3  align-items-center chat-footer">
+                    <div class="col-2 pr-0">
+                        <div class="file-attach">
+                            <input type="file">
+                            <img src="./image/add.svg" class="upload-img5" alt="">
+                        </div>
+                    </div>
+                    <div class="col-7 pl-0 pr-1">
+                        <input type="text" class="form-control w-100 fs-13 border-none chat-type" placeholder="Type here">
+                    </div>
+                    <div class="col-3 d-flex justify-content-end pl-0">
+                        <div class="attach mr-2">
+                            <img class="img-fluid" src="./image/send.svg" alt="">
+                        </div>
+                        <div class="attach">
+                            <img class="img-fluid" src="./image/mic.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------Enquiry chat screen------------------------->
+
+    <!--------------------Quotes list---------------------->
+    <div class="modal fade" id="quotes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-2 d-flex align-items-center enq-header px-3">
+                    <h5 class="modal-title fs-13 fw-600" id="exampleModalLabel">Quote List</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white ">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="#" class="text-gray" data-toggle="modal" data-target="#quotesDetails" data-dismiss="modal">
+                        <div class="lists mt-3 mb-1" id="list1">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div class="list-img">
+                                        <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt=""> </div>
+                                </div>
+                                <div class="col-9 pl-0">
+                                    <div class="chat-content">
+                                        <span class="d-flex justify-content-between align-items-center">
+                                        <p class="fw-600 text-color">Hilltop Resort</p>
+                                        <p class="fs-10 new-list">New</p>
+                                    </span>
+                                        <p class="fs-12 d-flex align-items-center">UEN1105</p>
+                                        <span class="d-flex justify-content-between align-items-center">
+                                            <p class="fs-12">Subject: Booking </p>
+                                            <span class="d-flex flex-column align-items-end">
+                                                <p class="fs-10">Today</p>
+                                                <p class="fs-10">10:30 AM</p>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="text-gray" data-toggle="modal" data-target="#quotesDetails" data-dismiss="modal">
+                        <div class="lists mt-3 mb-1" id="list1">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div class="list-img">
+                                        <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt=""> </div>
+                                </div>
+                                <div class="col-9 pl-0">
+                                    <div class="chat-content">
+                                        <span class="d-flex justify-content-between align-items-center">
+                                        <p class="fw-600 text-color">Rajamala Resort</p>
+                                        <p class="fs-10 new-list">New</p>
+                                    </span>
+                                        <p class="fs-12 d-flex align-items-center">UEN1105</p>
+                                        <span class="d-flex justify-content-between align-items-center">
+                                            <p class="fs-12">Subject: Booking </p>
+                                            <span class="d-flex flex-column align-items-end">
+                                                <p class="fs-10">07/Sept/2021</p>
+                                                <p class="fs-10">10:30 AM</p>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="text-gray" data-toggle="modal" data-target="#quotesDetails" data-dismiss="modal">
+                        <div class="lists mt-3 mb-1" id="list1">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div class="list-img">
+                                        <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt=""> </div>
+                                </div>
+                                <div class="col-9 pl-0">
+                                    <div class="chat-content">
+                                        <span class="d-flex justify-content-between align-items-center">
+                                        <p class="fw-600 text-color">Hilltop Resort</p>
+                                        <p class="fs-10 new-list">New</p>
+                                    </span>
+                                        <p class="fs-12 d-flex align-items-center">UEN1105</p>
+                                        <span class="d-flex justify-content-between align-items-center">
+                                            <p class="fs-12">Subject: Booking </p>
+                                            <span class="d-flex flex-column align-items-end">
+                                                <p class="fs-10">05/Sept/2021</p>
+                                                <p class="fs-10">10:30 AM</p>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------Quotes list---------------------->
+
+    <!-----------------------Quotes details----------------------->
+    <div class="modal fade" id="quotesDetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header p-2 d-flex align-items-center enq-header px-3">
+                    <h5 class="modal-title fs-13 fw-600" id="exampleModalLabel">Quotation Details</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white ">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="quotes my-3">
+                        <div class="quotes-details mt-3">
+                            <div class="border-bottom pb-3" id="list1">
+                                <div class="row mb-4">
+                                    <div class="col-3 pr-0">
+                                        <div class="list-img">
+                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 pl-0 text-right">
+                                        <p class="fw-600 ">Rajamala Resort</p>
+                                        <p class="fs-12"> +91 987 654 3220</p>
+                                        <p class="fs-12">rajamalaresort@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <div class="chat-content">
+                                            <span class="d-flex justify-content-between">
+                                            <p>Billed to:</p>
+                                            <p class="fs-12 text-gray">Issue date: 07-Sep-2021</p>
+                                        </span>
+                                            <span class="d-flex justify-content-between">
+                                               
+                                        <p class="fw-600 text-color">Subbaya Krishna</p>
+                                        <p class="fs-12 text-gray">Quotation No: QTN0010</p>
+                                           
+                                        </span>
+
+                                            <span class="d-flex justify-content-between">
+                                            <p class="fs-12">subbayya@gmail.com</p>
+                                            <p class="fs-12 text-gray">UEN: UEN1104</p>
+                                            
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <div class="row mt-4">
+                                    <div class="col-6">
+                                        <p class="fs-12">Check-in time: <span>10 AM</span></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="fs-12">Check-out time: <span>6:30 PM</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="fs-12">No. of Adults: <span>2</span></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="fs-12">No. of Children: <span>2</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="row mt-3">
+                                    <div class="col-6">
+                                        <p class="fs-12">No. of Nights: <span>1</span></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="fs-12">Meal Plan: <span>American</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invoice-table w-100 mt-2">
+                            <table class="w-100">
+                                <thead class="border-bottom">
+                                    <tr>
+                                        <th>Sl.</th>
+                                        <th>Particulars</th>
+                                        <th>Qty</th>
+                                        <th>Amount (in INR)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Deluxe Room</td>
+                                        <td>1</td>
+                                        <td>3700</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-right">GST</td>
+                                        <td>12%</td>
+                                        <td>444</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Premium Suite</td>
+                                        <td>1</td>
+                                        <td>5000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-right">GST</td>
+                                        <td>10%</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>Other Cost 1</td>
+                                        <td>1</td>
+                                        <td>1000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td>Other Cost 2</td>
+                                        <td>1</td>
+                                        <td>400</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="notes">
+                            <p class=" fw-600 mt-3">Notes</p>
+                            <p class="fs-10 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, saepe? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, veritatis.</p>
+                            <div class="d-flex justify-content-between mt-2 pt-2 border-top">
+                                <div class="">
+                                    <p>Grand Total</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-right grand">INR 9000</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class="">
+                                    <p>Discount</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-right grand">INR 500</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class="">
+                                    <p>Total Payable</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-right grand">INR 8500</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between pb-2 mt-2 border-bottom">
+                                <div class="">
+                                    <p>Advance Requested</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-right grand">INR 2000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="disclaimer my-2 mt-3">
+                            <p class="fw-600">Disclaimer</p>
+                            <p class="fs-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis possimus aspernatur nulla inventore aliquam magnam labore perspiciatis, veniam numquam?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary fs-12">Request Revision</button>
+                    <button type="button" class="btn submit-btn fs-12 white">Approve & Pay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------Quotes details----------------------->
+
+    <!--------------TruView---------------->
+    <div id="truView" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header chat-header p-0">
+                    <nav class="w-100">
+                        <div class="nav nav-pills d-flex justify-content-between" id="nav-tab" role="tablist">
+                            <button class="nav-link w-50 active chat-radius" id="nav-view-tab" data-toggle="tab" data-target="#nav-view" type="button" role="tab" aria-controls="nav-view" aria-selected="true">My TruViews</button>
+                            <button class="nav-link w-50 chat-radius1" id="nav-pending-tab" data-toggle="tab" data-target="#nav-pending" type="button" role="tab" aria-controls="nav-pending" aria-selected="false">Pending</button>
+                        </div>
+                    </nav>
+                    <div class="chat-close">
+                        <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-view" role="tabpanel" aria-labelledby="nav-view-tab">
+                            <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                <div class="lists mt-2" id="list0">
+                                    <div class="row">
+                                        <div class="col-4 pr-0">
+                                            <div class="true-img">
+                                                <img class="img-fluid" src="./image/surfing.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="chat-content">
+                                                <p class="fw-600 text-color ">Rajamala Resort</p>
+                                                <p class="fs-12 d-flex align-items-center py-1"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>TN, India</p>
+                                                <div class="star-prev ">
+                                                    <i class="fa fa-star yellow"></i>
+                                                    <i class="fa fa-star yellow"></i>
+                                                    <i class="fa fa-star yellow"></i>
+                                                    <i class="fa fa-star yellow"></i>
+                                                    <i class="fa fa-star gray"></i>
+                                                    <span class="ml-2 fs-13">4.5</span>
+                                                </div>
+                                                <p>"I stayed here with my family for 5 days and I can't be more satisfied with their services..."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                <div class="lists mt-2" id="list0">
+                                    <div class="row">
+                                        <div class="col-4 pr-0">
+                                            <div class="true-img">
+                                                <img class="img-fluid" src="./image/surfing.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="chat-content">
+                                                <p class="fw-600 text-color ">West Loch</p>
+                                                <p class="fs-12 d-flex align-items-center py-1"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>TN, India</p>
+                                                <div class="star-prev ">
+                                                    <i class="fa fa-star yellow"></i>
+                                                    <i class="fa fa-star yellow"></i>
+                                                    <i class="fa fa-star yellow"></i>
+                                                    <i class="fa fa-star yellow"></i>
+                                                    <i class="fa fa-star gray"></i>
+                                                    <span class="ml-2 fs-13">4.5</span>
+                                                </div>
+                                                <p>"I stayed here with my family for 5 days and I can't be more satisfied with their services..."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="text-gray" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">
+                                <div class="lists mt-2 mb-2" id="list0">
+                                    <div class="row">
+                                        <div class="col-4 pr-0">
+                                            <div class="true-img">
+                                                <img class="img-fluid" src="./image/surfing.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="chat-content">
+                                                <p class="fw-600 text-color  ">Hilltop Resort</p>
+                                                <p class="fs-12 d-flex align-items-center py-1"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Kerala, India</p>
+                                                <div class="star-prev ">
+                                                    <i class="fa fa-star yellow"></i>
+                                                    <i class="fa fa-star yellow"></i>
+                                                    <i class="fa fa-star yellow"></i>
+                                                    <i class="fa fa-star yellow"></i>
+                                                    <i class="fa fa-star gray"></i>
+                                                    <span class="ml-2 fs-13">4.5</span>
+                                                </div>
+                                                <p>"I stayed here with my family for 5 days and I can't be more satisfied with their services..."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tab-pane fade pb-2" id="nav-pending" role="tabpanel" aria-labelledby="nav-pending-tab">
+                            <div class="lists mt-2" id="list0">
+                                <div class="row">
+                                    <div class="col-4 pr-0">
+                                        <div class="true-pending-img">
+                                            <img class="img-fluid" src="./image/surfing.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="chat-content">
+                                            <p class="fw-600 text-gray pb-3">How was your stay at Lavender Homestay?</p>
+                                            <a href="./truView.html" class="tru-btn fs-12">TruView Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lists mt-2" id="list0">
+                                <div class="row">
+                                    <div class="col-4 pr-0">
+                                        <div class="true-pending-img">
+                                            <img class="img-fluid" src="./image/surfing.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="chat-content">
+                                            <p class="fw-600 text-gray pb-3">How was your stay at Lavender Homestay?</p>
+                                            <a href="./truView.html" class="tru-btn fs-12">TruView Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--------------TruView---------------->
+
+    <!-----------------Booking List------------------------>
+    <div class="modal fade" id="bookings" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-2 d-flex align-items-center enq-header px-3">
+                    <h5 class="modal-title fw-600 fs-13" id="exampleModalLabel">Bookings</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white ">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="#" class="text-gray" data-toggle="modal" data-target="#bookingDetails" data-dismiss="modal">
+                        <div class="lists mt-3 mb-1" id="list1">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div class="list-img">
+                                        <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-9 pl-0">
+                                    <div class="chat-content">
+                                        <span class="d-flex justify-content-between align-items-center">
+                                        <p class="fw-600 text-color">Hilltop Resort</p>
+                                        <p class="fs-10 new-list">New</p>
+                                    </span>
+                                        <p class="fs-12 d-flex align-items-center">Booking ID: BK7</p>
+                                        <span class="d-flex justify-content-between align-items-center">
+                                            <p class="fs-12">Subject: Booking </p>
+                                            <span class="d-flex flex-column align-items-end">
+                                                <p class="fs-10">Today</p>
+                                                <p class="fs-10">10:30 AM</p>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="text-gray" data-toggle="modal" data-target="#bookingDetails" data-dismiss="modal">
+                        <div class="lists mt-3 mb-1" id="list1">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div class="list-img">
+                                        <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-9 pl-0">
+                                    <div class="chat-content">
+                                        <span class="d-flex justify-content-between align-items-center">
+                                        <p class="fw-600 text-color">Rajamala Resort</p>
+                                        <p class="fs-10 new-list">New</p>
+                                    </span>
+                                        <p class="fs-12 d-flex align-items-center">Booking ID: BK7</p>
+                                        <span class="d-flex justify-content-between align-items-center">
+                                            <p class="fs-12">Subject: Booking </p>
+                                            <span class="d-flex flex-column align-items-end">
+                                                <p class="fs-10">07/Sept/2021</p>
+                                                <p class="fs-10">10:30 AM</p>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="text-gray" data-toggle="modal" data-target="#bookingDetails" data-dismiss="modal">
+                        <div class="lists mt-3 mb-1" id="list1">
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <div class="list-img">
+                                        <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-9 pl-0">
+                                    <div class="chat-content">
+                                        <span class="d-flex justify-content-between align-items-center">
+                                        <p class="fw-600 text-color">Hilltop Resort</p>
+                                        <p class="fs-10 new-list">New</p>
+                                    </span>
+                                        <p class="fs-12 d-flex align-items-center">Booking ID: BK7</p>
+                                        <span class="d-flex justify-content-between align-items-center">
+                                            <p class="fs-12">Subject: Booking </p>
+                                            <span class="d-flex flex-column align-items-end">
+                                                <p class="fs-10">05/Sept/2021</p>
+                                                <p class="fs-10">10:30 AM</p>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------Booking List------------------------>
+
+    <!------------------Booking details--------------------->
+    <div class="modal fade" id="bookingDetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header p-2 d-flex align-items-center enq-header px-3">
+                    <h5 class="modal-title fw-600 fs-13" id="exampleModalLabel">Booking Invoice</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white ">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="quotes my-3">
+                        <div class="row invoice-header d-flex justify-content-between">
+                            <div class="col-3 list-img2">
+                                <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt=""> </div>
+                            <div class="col-9 text-right">
+                                <p class="fw-600 ">Hotel West Loch</p>
+                                <p class="fs-12"><img class="img-fluid" src="./image/phone-call.svg" width="15" alt=""> +91 987 654 3220</p>
+                                <p class="fs-12"><img class="img-fluid" src="./image/email.svg" width="15" alt=""> westloch@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12 booking-person">
+                                <div class="d-flex justify-content-between ">
+                                    <p class="fs-12 text-color fw-600">Mr. Subbayya Krishna</p>
+                                    <p class="fs-12 text-gray">20/07/2021</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="fs-12 text-gray">Advance Paid: <span class="fs-13">USD 2200</span></p>
+                                    <p class="fs-12 text-gray">UEN: <span class="fs-13">UEN532</span></p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="fs-12 text-gray">Booking ID: <span class="fs-13">BK1234</span></p>
+                                    <p class="fs-12 text-gray">Invoice No: <span class="fs-13">INV0012</span></p>
+                                </div>
+                                <div>
+                                    <p class="fs-12 text-gray">Room Number: <span class="fs-13">204</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <table class="col-12 w-100">
+                                <thead class="invoice-table">
+                                    <tr class="border-bottom pb-2">
+                                        <th class="fw-500">Sl.No</th>
+                                        <th class="fw-500">Pax</th>
+                                        <th class="fw-500">Cost/Head</th>
+                                        <th class="fw-500">Quantity</th>
+                                        <th class="fw-500">Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="cost-details">
+                                    <tr class="">
+                                        <td>1.</td>
+                                        <td>Tour</td>
+                                        <td>2500</td>
+                                        <td>5</td>
+                                        <td>17500.00</td>
+                                    </tr>
+                                    <tr class=" border-bottom">
+                                        <td>2.</td>
+                                        <td>other</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>1200.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="mt-5">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="fs-12 text-gray py-2">Total</p>
+                                <p class="fs-12 text-gray">18700.00</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="fs-12 text-gray py-2">Tax <span class="fs-12">8%</span></p>
+                                <p class="fs-12 text-gray">1496.00</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="fs-12 text-gray py-2">Discount</p>
+                                <p class="fs-12 text-gray">0.00</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="fs-12 text-gray py-2">Advance/Deposit</p>
+                                <p class="fs-12 text-gray">2500.00</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center border-top border-bottom mt-2">
+                                <p class="fs-12 text-gray py-2">Balance</p>
+                                <p class="fs-12 text-gray">17696.00</p>
+                            </div>
+                        </div>
+                        <div class="disclaimer my-2 mt-3">
+                            <p class="fw-600">Disclaimer</p>
+                            <p class="fs-10 text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis possimus aspernatur nulla inventore aliquam magnam labore perspiciatis, veniam numquam?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn submit-btn fs-12 white" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal">Raise a query</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------Booking details--------------------->
+
+
+    <!---------------------Itinerary overview---------------------->
+    <div class="modal fade" id="itineraryOverview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header delete-header d-flex align-items-center py-2">
+                    <h5 class="modal-title fs-14 fw-600" id="exampleModalLabel">Itinerary Preview</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container px-0" id="view">
+                        <div class="box1 mt-4">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class=" d-flex align-items-center">
+                                        <div class="profile">
+                                            <div class="profile-circle">
+                                                <img src="./image/young-man-arms-outstretched-by-sea-sunrise-enjoying-freedom-life-people-travel-wellbeing-concept.jpg" class="img-fluid h-100 w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="content pl-2">
+                                            <p class="fs-16 fw-500">ITINERARY NAME</p>
+                                            <P>Slogan: Lorem ipsum dolor</P>
+                                            <p><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="20px" alt="">Kochi, Kerala, India</p>
+                                            <div class="sec-3 py-2">
+                                                <span class="img-round1"><img src="./image/bird.png" alt="" class="  height-17"></span>
+                                                <span class="img-round1"> <img src="./image/butterfly.png" alt="" class="height-17"> </span>
+                                                <span class="img-round1"> <img src="./image/fish.png" alt="" class="height-17"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 d-flex align-items-center justify-content-lg-end">
+                                    <div class="details py-2">
+                                        <p>Itinerary No: NR20-001</p>
+                                        <p>Created Date: 02/12/2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-3 d-flex justify-content-center align-items-center">
+
+                            <div class="col">
+                                <p class="fs-13 fw-600 blue south text-center">ALAPPUZHA | IDUKKI | WAYANAD</p>
+
+                            </div>
+
+                        </div>
+                        <div class="main-box">
+                            <div style="overflow: hidden; border-bottom: 1px solid #00c0b5;" class="pb-2">
+                                <p class="dayclass fs-16">Itinerary at a Glance</p>
+                                <p class="float-right blue">7 Days/6 Nights</p>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-lg-12">
+                                    <ul class="fs-13 px-0 list-view">
+                                        <li><span class="blue">Tour Class</span>
+                                            <p>: Luxury</p>
+                                        </li>
+                                        <li><span class="blue">Group Size</span>
+                                            <p>: 2</p>
+                                        </li>
+                                        <li><span class="blue">Arrival Port</span>
+                                            <p>: Kochi</p>
+                                        </li>
+                                        <li><span class="blue">Primary Travel Theme</span>
+                                            <p>: Birding</p>
+                                        </li>
+                                        <li><span class="blue">Secondary Travel Theme</span>
+                                            <p>: Fishing | Culture & History</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p class="blue pb-2">Description</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sed explicabo libero fuga est corrupti velit expedita quisquam commodi labore.</p>
+                            </div>
+                        </div>
+                        <div class="main-box mt-3">
+                            <div class="mt-4">
+                                <div style="overflow: hidden; border-bottom: 1px solid #00c0b5;" class="pb-2">
+                                    <p class="blue">Day 1</p>
+                                    <p class=" blue">02/March/2020</p>
+                                </div>
+                                <div style="overflow: hidden; border-bottom: 1px solid rgba(0,0,0,.1);" class="pb-2">
+                                    <p class="dayclass pt-3">Destination</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-12 ">
+                                        <div class="hotels">
+                                            <img src="./image/surfing.png" class="rounded-10 mt-3 img-fluid corner-round" width="300" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-12">
+                                        <div class="mt-3">
+                                            <p class="fs-16 blue">Cochin internationl Airport</p>
+                                            <p class="fs-13 pb-2">Cochin, Kerala</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad sapiente ullam alias dolorum, aliquam quas perspiciatis. Ad omnis, aut, tenetur repellat saepe autem vitae animi minus nam aliquam dolorum
+                                                cupiditate provident at officiis porro. Recusandae hic quis dolore accusantium?</p>
+                                        </div>
+                                        <div class="w-100 input-group mt-4 textOnInput-overview expand">
+                                            <input type="text" name="" id="email01" class="form-control ml-0" placeholder="Airport">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="overflow: hidden; border-bottom: 1px solid rgba(0,0,0,.1);" class="pb-2 my-2">
+                                    <p class="dayclass pt-3">Accommodation</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-12 ">
+                                        <div class="hotels">
+                                            <img src="./image/surfing.png" class="rounded-10 mt-3 img-fluid corner-round" width="300" alt="">
+                                            <div class="carousel-caption">
+                                                <div class="caption-txt d-flex justify-content-between">
+                                                    <span>
+                                            <p class="text-color fs-13">House Boat</p>
+                                            <p class="text-color fs-13">2500.00/Night</p>
+                                        </span>
+                                                    <span>
+                                           <p class="blue fs-13">3.8/5</p>
+                                           <p class="blue fs-13">(55 Ratings)</p>
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-12">
+                                        <div class="mt-3">
+                                            <p class="fs-16 blue">Kasis Art Cafe</p>
+                                            <p class="fs-13 pb-2">Cochin, Kerala</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad sapiente ullam alias dolorum, aliquam quas perspiciatis. Ad omnis, aut, tenetur repellat saepe autem vitae animi minus nam aliquam dolorum
+                                                cupiditate provident at officiis porro. Recusandae hic quis dolore accusantium?</p>
+                                        </div>
+                                        <div class="col-md-12 d-flex justify-content-between px-0 mt-2">
+                                            <div class=" input-group w-100 mt-3 mr-2 ml-0 textOnInput-overview">
+
+                                                <input type="text" name="" id="email01" class="form-control ml-0" placeholder="Hotel & Resort">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="overflow: hidden; border-bottom: 1px solid rgba(0,0,0,.1);" class="pb-2 my-2">
+                                    <p class="dayclass pt-3">Attractions</p>
+                                </div>
+                                <div class="small-box d-flex pb-2 justify-content-between flex-wrap">
+                                    <p>Kochi Art Museum</p>
+                                    <p>Chinese Fishing net </p>
+                                    <p>Vasco-Da-Gamma Church</p>
+                                </div>
+                                <hr>
+                                <div class="input-group mt-4 textOnInput-overview">
+                                    <input type="text" name="" id="email02" class="form-control ml-0" placeholder="We will pick you from Airport">
+                                </div>
+                            </div>
+                            <div class="mt-5 day-1-print">
+                                <div style="overflow: hidden; border-bottom: 1px solid #00c0b5;" class="pb-2">
+                                    <p class="blue">Day 2</p>
+                                    <p class=" blue">02/March/2020</p>
+                                </div>
+                                <div style="overflow: hidden; border-bottom: 1px solid rgba(0,0,0,.1);" class="pb-2 pb-2">
+                                    <p class="dayclass pt-3">Destination</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-12 ">
+                                        <div class="hotels">
+                                            <img src="./image/surfing.png" class="rounded-10 mt-3 img-fluid corner-round" width="300" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-12">
+                                        <div class="mt-3">
+                                            <p class="fs-16 blue">Munnar</p>
+                                            <p class="fs-13 pb-2">Cochin, Kerala</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad sapiente ullam alias dolorum, aliquam quas perspiciatis. Ad omnis, aut, tenetur repellat saepe autem vitae animi minus nam aliquam dolorum
+                                                cupiditate provident at officiis porro. Recusandae hic quis dolore accusantium?</p>
+                                        </div>
+                                        <div class="col-md-12 d-flex justify-content-between px-0 mt-2">
+                                            <div class=" input-group w-100 mt-3 mr-2 ml-0 textOnInput-overview">
+
+                                                <input type="text" name="" id="email01" class="form-control ml-0" placeholder="Hillstation">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="overflow: hidden; border-bottom: 1px solid rgba(0,0,0,.1);" class="pb-2 my-2">
+                                    <p class="dayclass pt-3">Accommodation</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-12 ">
+                                        <div class="hotels">
+                                            <img src="./image/surfing.png" class="rounded-10 mt-3 img-fluid corner-round" width="300" alt="">
+                                            <div class="carousel-caption">
+                                                <div class="caption-txt d-flex justify-content-between">
+                                                    <span>
+                                            <p class="text-color">House Boat</p>
+                                            <p class="text-color">2500.00/Night</p>
+                                        </span>
+                                                    <span>
+                                           <p class="blue">3.8/5</p>
+                                           <p class="blue">(55 Ratings)</p>
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-12">
+                                        <div class="mt-3">
+                                            <p class="fs-16 blue">Kasis Art Cafe</p>
+                                            <p class="fs-13 pb-2">Cochin, Kerala</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad sapiente ullam alias dolorum, aliquam quas perspiciatis. Ad omnis, aut, tenetur repellat saepe autem vitae animi minus nam aliquam dolorum
+                                                cupiditate provident at officiis porro. Recusandae hic quis dolore accusantium?</p>
+                                        </div>
+                                        <div class="col-md-12 d-flex justify-content-between mt-2 px-0">
+                                            <div class=" input-group w-100 mt-3 mr-2 ml-0 textOnInput-overview">
+
+                                                <input type="text" name="" id="email01" class="form-control ml-0" placeholder="Hotels">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="overflow: hidden; border-bottom: 1px solid rgba(0,0,0,.1);" class="pb-2 my-2">
+                                    <p class="dayclass pt-3">Attractions</p>
+                                </div>
+                                <div class="small-box d-flex pb-2 flex-wrap justify-content-between">
+                                    <p>Kochi Art Museum</p>
+                                    <p>Chinese Fishing net </p>
+                                    <p>Vasco-Da-Gamma Church</p>
+                                </div>
+                                <hr>
+
+                                <div class="input-group mt-4 textOnInput-overview pb-2">
+
+                                    <input type="text" name="" id="email02" class="form-control ml-0" placeholder="We will pick you from Airport">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box mt-3">
+                            <p class="fs-13 blue pb-2 border-outline">Species</p>
+                            <div class="row mt-3">
+                                <div class="form-group col-lg-12 col-md-12">
+                                    <p class="fs-13 blue pb-2 border-outline border-bottom">Birds</p>
+                                    <div class="row px-3 justify-content-between">
+                                        <div class="box-5  d-flex align-items-center">
+                                            <span class="img-round"><img src="./image/bird.png" alt="" class="height-17"></span>
+                                            <span class="ml-2">
+                                            <p>English Name</p>
+                                            <p class="fs-12 light-gray">Scientific Name</p>
+                                        </span>
+                                        </div>
+                                        <div class="box-5  d-flex align-items-center">
+                                            <span class="img-round"><img src="./image/bird.png" alt="" class="height-17"></span>
+                                            <span class="ml-2">
+                                            <p>English Name</p>
+                                            <p class="fs-12 light-gray">Scientific Name</p>
+                                        </span>
+                                        </div>
+                                        <div class="box-5  d-flex align-items-center">
+                                            <span class="img-round"><img src="./image/bird.png" alt="" class="height-17"></span>
+                                            <span class="ml-2">
+                                            <p>English Name</p>
+                                            <p class="fs-12 light-gray">Scientific Name</p>
+                                        </span>
+                                        </div>
+                                        <div class="box-5  d-flex align-items-center">
+                                            <span class="img-round"><img src="./image/bird.png" alt="" class="height-17"></span>
+                                            <span class="ml-2">
+                                            <p>English Name</p>
+                                            <p class="fs-12 light-gray">Scientific Name</p>
+                                        </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="form-group col-lg-12 col-md-12">
+                                    <p class="fs-13 blue pb-2 border-outline border-bottom">Mammals</p>
+                                    <div class="row px-3 justify-content-between">
+                                        <div class="box-5  d-flex align-items-center">
+                                            <span class="img-round"><img src="./image/bird.png" alt="" class="height-17"></span>
+                                            <span class="ml-2">
+                                            <p>English Name</p>
+                                            <p class="fs-12 light-gray">Scientific Name</p>
+                                        </span>
+                                        </div>
+                                        <div class="box-5  d-flex align-items-center">
+                                            <span class="img-round"><img src="./image/bird.png" alt="" class="height-17"></span>
+                                            <span class="ml-2">
+                                            <p>English Name</p>
+                                            <p class="fs-12 light-gray">Scientific Name</p>
+                                        </span>
+                                        </div>
+                                        <div class="box-5  d-flex align-items-center">
+                                            <span class="img-round"><img src="./image/bird.png" alt="" class="height-17"></span>
+                                            <span class="ml-2">
+                                            <p>English Name</p>
+                                            <p class="fs-12 light-gray">Scientific Name</p>
+                                        </span>
+                                        </div>
+                                        <div class="box-5  d-flex align-items-center">
+                                            <span class="img-round"><img src="./image/bird.png" alt="" class="height-17"></span>
+                                            <span class="ml-2">
+                                            <p>English Name</p>
+                                            <p class="fs-12 light-gray">Scientific Name</p>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box mt-3 mb-4">
+                            <div class="row mt-3">
+                                <div class="col-lg-12">
+                                    <p class="blue border-outline pb-2 border-bottom">Notes</p>
+                                    <p class="pb-2 pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestias eveniet fugit. Eveniet facere labore corporis! Consequuntur rem natus assumenda adipisci! Debitis soluta maiores at sit fugit odit nisi
+                                        harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nemo veniam necessitatibus dolor sapiente expedita mollitia dicta soluta deserunt voluptates.</p>
+                                </div>
+                                <div class="col-lg-12 mt-2">
+                                    <p class="blue border-outline pb-2 border-bottom">Includes</p>
+                                    <p class="pb-4 pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus commodi sit recusandae pariatur repudiandae animi perspiciatis corporis. Aliquid obcaecati impedit, labore quasi ut provident. Assumenda hic
+                                        quibusdam corrupti itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nisi repellat similique accusantium amet sint temporibus debitis tempore quasi earum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------Itinerary overview---------------------->
+
+    <script>
+        $(document).ready(function() {
+            if (window.File && window.FileList && window.FileReader) {
+                $("#files8").on("change", function(e) {
+                    var files = e.target.files,
+                        filesLength = files.length;
+                    for (var i = 0; i < filesLength; i++) {
+                        var f = files[i]
+                        var fileReader = new FileReader();
+                        fileReader.onload = (function(e) {
+                            var file = e.target;
+                            $("<span class=\"pip\">" +
+                                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                                "<br/><span class=\"remove2\">Remove image</span>" +
+                                "</span>").insertAfter("#files8");
+                            $('.upload-img').addClass("fadeaway")
+                            $(".remove2").click(function() {
+                                $(this).parent(".pip").remove();
+                            });
+
+
+
+                        });
+                        fileReader.readAsDataURL(f);
+                    }
+                    console.log(files);
+                });
+            } else {
+
+            }
+            if (window.File && window.FileList && window.FileReader) {
+                $("#files9").on("change", function(e) {
+                    var files = e.target.files,
+                        filesLength = files.length;
+                    for (var i = 0; i < filesLength; i++) {
+                        var f = files[i]
+                        var fileReader = new FileReader();
+                        fileReader.onload = (function(e) {
+                            var file = e.target;
+                            $("<span class=\"pip\">" +
+                                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                                "<br/><span class=\"remove2\">Remove image</span>" +
+                                "</span>").insertAfter("#files9");
+                            $('.upload-img').addClass("fadeaway")
+                            $(".remove2").click(function() {
+                                $(this).parent(".pip").remove();
+                            });
+
+
+
+                        });
+                        fileReader.readAsDataURL(f);
+                    }
+                    console.log(files);
+                });
+            } else {
+
+            }
+            if (window.File && window.FileList && window.FileReader) {
+                $("#files10").on("change", function(e) {
+                    var files = e.target.files,
+                        filesLength = files.length;
+                    for (var i = 0; i < filesLength; i++) {
+                        var f = files[i]
+                        var fileReader = new FileReader();
+                        fileReader.onload = (function(e) {
+                            var file = e.target;
+                            $("<span class=\"pip\">" +
+                                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                                "<br/><span class=\"remove2\">Remove image</span>" +
+                                "</span>").insertAfter("#files10");
+                            $('.upload-img').addClass("fadeaway")
+                            $(".remove2").click(function() {
+                                $(this).parent(".pip").remove();
+                            });
+
+
+
+                        });
+                        fileReader.readAsDataURL(f);
+                    }
+                    console.log(files);
+                });
+            } else {
+
+            }
+        });
+
+        $(".trash").click(function(e) {
+            e.preventDefault();
+            $(".trash-parent").hide();
+        });
+        $(".trash2").click(function(e) {
+            e.preventDefault();
+            $(".trash-parent2").hide();
+        });
+        $(".trash3").click(function(e) {
+            e.preventDefault();
+            $(".trash-parent3").hide();
+        });
+    </script>
+
+    <!-----Script----->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

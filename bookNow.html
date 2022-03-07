@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/lightgallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./js/lightgallery-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+
+</head>
+
+<body>
+    <div class="header-fixed">
+        <div class="container-fluid">
+            <div class="row p-3 align-items-center">
+                <div class="col-6 p-0">
+                    <a href="#"> <img src="./image/tripmemo_logo_black.png" class="img-fluid " width="150" alt=""></a>
+                </div>
+                <div class="col-6 p-0 d-flex justify-content-end">
+                    <div class="dropdown">
+                        <a class="d-flex align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                            <span class="user-logo "> <img src="./image/lady.jpg" class="img-fluid" alt=""> </span>
+                            <i class="fas fa-chevron-down pl-2 fs-10 text-color"></i>
+                        </a>
+
+                        <ul class="dropdown-menu logged-dropdown-traveller" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">Delete Account</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!----Banner Start----->
+    <div class="container-fluid d-flex align-item-center justify-content-between">
+        <div class="my-3 pt-2">
+            <a href="./accommodationTimeline.html" class="text-color fs-14 fw-600"><i class="fas fa-arrow-left"></i></a>
+        </div>
+    </div>
+    <section>
+
+        <!-------------Rooms Carousel start---------------->
+        <div class="mx-3 mb-4">
+            <div class="owl-carousel owl-theme " data-slider-id="1" id="rooms-book-slider">
+                <div class="item ">
+                    <div class="box m-1 ">
+                        <div class="owl-carousel--nested ">
+                            <div class="item--nested ">
+                                <img src="./image/room1.jpg " alt=" " class="thumb--nest bord-radius-6 ">
+                            </div>
+                            <div class="item--nested ">
+                                <img src="./image/room2.jpg " alt=" " class="thumb--nest bord-radius-6 ">
+                            </div>
+                            <div class="item--nested ">
+                                <img src="./image/room3.jpg " alt=" " class="thumb--nest bord-radius-6 ">
+                            </div>
+                            <div class="item--nested ">
+                                <img src="./image/room2.jpg " alt=" " class="thumb--nest bord-radius-6 ">
+                            </div>
+                        </div>
+                        <div class="w3-container w3-center p-3 mt-2">
+                            <div class="d-flex justify-content-between ">
+                                <div class=" ">
+                                    <h6 class="fs-16 fw-600 mb-0 ">Stream-View Suits</h6>
+                                    <p class="mt-1 ">Breakfast + Lunch + Dinner</p>
+                                </div>
+                                <div>
+                                    <p class="price-tag ">INR 7000+tax</p>
+                                </div>
+                            </div>
+                            <div class="counter d-flex justify-content-between align-items-center ">
+                                <div>
+                                    <p>No. of rooms</p>
+                                </div>
+                                <div class="wrap ">
+                                    <button type="button " id="sub " class="sub ">-</button>
+                                    <input class="count text-center " type="text " id="1 " value="1 " min="1 " max="100 ">
+                                    <button type="button " id="add " class="add ">+</button>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="w-100 mt-1 room-selection">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="box m-1 ">
+                        <div class="owl-carousel--nested ">
+                            <div class="item--nested ">
+                                <img src="./image/room1.jpg " alt=" " class="thumb--nest bord-radius-6 ">
+                            </div>
+                            <div class="item--nested ">
+                                <img src="./image/room2.jpg " alt=" " class="thumb--nest bord-radius-6 ">
+                            </div>
+                            <div class="item--nested ">
+                                <img src="./image/room3.jpg " alt=" " class="thumb--nest bord-radius-6 ">
+                            </div>
+                            <div class="item--nested ">
+                                <img src="./image/room2.jpg " alt=" " class="thumb--nest bord-radius-6 ">
+                            </div>
+                        </div>
+                        <div class="w3-container w3-center p-3 mt-2">
+                            <div class="d-flex justify-content-between ">
+                                <div class=" ">
+                                    <h6 class="fs-16 fw-600 mb-0 ">Deluxe</h6>
+                                    <p class="mt-1 ">Breakfast + Lunch + Dinner</p>
+                                </div>
+                                <div>
+                                    <p class="price-tag ">INR 7000+tax</p>
+                                </div>
+                            </div>
+                            <div class="counter d-flex justify-content-between align-items-center ">
+                                <div>
+                                    <p>No. of rooms</p>
+                                </div>
+                                <div class="wrap ">
+                                    <button type="button " id="sub " class="sub ">-</button>
+                                    <input class="count text-center " type="text " id="1 " value="1 " min="1 " max="100 ">
+                                    <button type="button " id="add " class="add ">+</button>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="w-100 mt-1 room-selection">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="box m-1 ">
+                        <div class="owl-carousel--nested ">
+                            <div class="item--nested ">
+                                <img src="./image/room1.jpg " alt=" " class="thumb--nest bord-radius-6 ">
+                            </div>
+                            <div class="item--nested ">
+                                <img src="./image/room2.jpg " alt=" " class="thumb--nest bord-radius-6 ">
+                            </div>
+                            <div class="item--nested ">
+                                <img src="./image/room3.jpg " alt=" " class="thumb--nest bord-radius-6 ">
+                            </div>
+                            <div class="item--nested ">
+                                <img src="./image/room2.jpg " alt=" " class="thumb--nest bord-radius-6 ">
+                            </div>
+                        </div>
+                        <div class="w3-container w3-center p-3 mt-2">
+                            <div class="d-flex justify-content-between ">
+                                <div class=" ">
+                                    <h6 class="fs-16 fw-600 mb-0 ">Super Deluxe Rooms</h6>
+                                    <p class="mt-1 ">Breakfast + Lunch + Dinner</p>
+                                </div>
+                                <div>
+                                    <p class="price-tag ">INR 7000+tax</p>
+                                </div>
+                            </div>
+                            <div class="counter d-flex justify-content-between align-items-center ">
+                                <div>
+                                    <p>No. of rooms</p>
+                                </div>
+                                <div class="wrap ">
+                                    <button type="button " id="sub " class="sub ">-</button>
+                                    <input class="count text-center " type="text " id="1 " value="1 " min="1 " max="100 ">
+                                    <button type="button " id="add " class="add ">+</button>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="w-100 mt-1 room-selection">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------Rooms Carousel End---------------->
+
+        <div class="hr-break"></div>
+        <!-------------Checkin details----------------->
+        <div class="counter mx-3 mt-3 d-flex justify-content-between align-items-center ">
+            <div>
+                <p>Adults</p>
+            </div>
+            <div class="wrap ">
+                <button type="button " id="sub " class="sub ">-</button>
+                <input class="count text-center " type="text " id="1 " value="1 " min="1 " max="100 ">
+                <button type="button " id="add " class="add ">+</button>
+            </div>
+        </div>
+        <div class="counter mx-3 d-flex justify-content-between align-items-center ">
+            <div>
+                <p>Children</p>
+            </div>
+            <div class="wrap">
+                <button type="button " id="sub " class="sub ">-</button>
+                <input class="count text-center " type="text " id="1 " value="0" min="1 " max="100 ">
+                <button type="button " id="add " class="add ">+</button>
+            </div>
+        </div>
+        <div class="mx-3 mb-4">
+            <p class="mt-3">Order Value: INR <span class="fw-600">7000</span>(7000 + 550 tax)</p>
+            <p class="fs-12 text-gray mt-1 italics">*Extra beds & other requirements to be communicated directly with the supplier.</p>
+            <p class="mt-1">View <a href="#" class="">Terms, Conditons & Policies </a></p>
+        </div>
+        <!-------------Checkin details----------------->
+
+        <footer class="mb-5">
+            <div class="mx-3 my-2 ">
+                <p class="py-2 ">&copy TripMemo, All Rights Reserved</p>
+            </div>
+        </footer>
+
+    </section>
+    <!-----Bottom Navabr Start----->
+    <nav>
+        <div class="bottom-nav hotel-nav d-flex py-2 px-4 justify-content-around " id="navbar ">
+            <a href="#" data-toggle="modal" data-target="#unregisteredUser" class="white fs-13 ">Confirm Booking</a>
+
+        </div>
+    </nav>
+    <!-----Bottom Navabr end----->
+
+    <!--popup for unregistered users-->
+    <div class="modal fade" id="unregisteredUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable unregistered-dialog">
+            <div class="modal-content unregistered-content">
+                <div class="modal-header pro-forma py-3 d-flex align-items-center enq-header px-3">
+                    <h5 class="modal-title fs-14 fw-600" id="exampleModalLabel">Who's booking?</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body pb-0">
+                    <form action="" method="post">
+                        <input type="text" class="form-control fs-13 mt-2" placeholder="Name">
+                        <input type="text" class="form-control fs-13 mt-3" placeholder="E-mail">
+                        <input type="text" class="form-control fs-13 mt-3 mb-2" placeholder="Mobile No.">
+                        <input type="password" class="form-control fs-13 mt-3 mb-2" placeholder="Mobile No.">
+                        <label for="whatsapp-check" class="d-flex align-items-center fs-12 text-gray"><input type="checkbox" name="" id="whatsapp-check" onchange="valueChanged()" class="whatsappCheck"><span class="ml-2">  WhatsApp me on this number.</span></label>
+                        <input type="text" class="form-control fs-13 mt-2 mb-4 whatsappfiled" placeholder="WhatsApp Number">
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary fs-12 w-25" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn submit-btn fs-12 white w-25 paynow" data-toggle="modal" data-target="#proformaDetails" data-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function valueChanged() {
+            if ($('.whatsappCheck').is(":checked"))
+                $(".whatsappfiled").hide();
+            else
+                $(".whatsappfiled").show();
+        }
+    </script>
+    <!--popup for unregistered users-->
+
+    <!-----------------Pro forma invoice popup--------------------->
+    <div class="modal fade" id="proformaDetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header pro-forma p-2 py-3 d-flex align-items-center enq-header px-3">
+                    <h5 class="modal-title fs-14 fw-600" id="exampleModalLabel">Pro forma Invoice</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body pb-0">
+                    <div class=" my-3">
+                        <div class="quotes-details mt-3">
+                            <div class="border-bottom pb-3" id="list1">
+                                <div class="row mb-4">
+                                    <div class="col-3 pr-0">
+                                        <div class="">
+                                            <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 pl-0 text-right">
+                                        <p class="fw-600 text-right">Green Valley Homes</p>
+                                        <p class="fs-12 text-right">Suryanelli, Munnar, <br> India - 695584</p>
+                                        <p class="fs-12 text-right">greenvalley@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-6">
+                                        <p>Billed to:</p>
+                                        <p class="fw-600">Subbaya Krishna</p>
+                                        <p class="fs-13 d-flex align-items-center">
+                                            <img src="./image/Flag_of_India.svg" class="small-img img mr-2" alt=""> Kerala, India
+                                        </p>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="text-right">Invoice No: IVN123</p>
+                                        <p class="text-right">UEN: UEN123</p>
+                                        <p class="text-right">Issue Date: 12-08-2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invoice-table w-100 mt-2">
+                            <table class="w-100">
+                                <thead class="border-bottom">
+                                    <tr>
+                                        <th>Sl. No</th>
+                                        <th>Particulars</th>
+                                        <th>Qty</th>
+                                        <th>Amount (in INR)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="">
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Deluxe Room</td>
+                                        <td>1</td>
+                                        <td class="text-right">INR 3700</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="">GST</td>
+
+                                        <td>12%</td>
+                                        <td class="text-right">INR 444</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="">Tax</td>
+
+                                        <td>2%</td>
+                                        <td class="text-right">INR 50</td>
+                                    </tr>
+                                    <tr class="border-top">
+                                        <td>2.</td>
+                                        <td>Premium Suite</td>
+                                        <td>1</td>
+                                        <td class="text-right">INR 5000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="">GST</td>
+                                        <td>10%</td>
+                                        <td class="text-right">INR 500</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="total d-flex justify-content-between px-3">
+                    <p>Total</p>
+                    <p>INR 7000</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary fs-12 w-25">Close</button>
+                    <button type="button" class="btn submit-btn fs-12 white w-25 paynow" data-toggle="modal" data-target="#congratsModal" data-dismiss="modal">Pay Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------Pro forma invoice popup--------------------->
+
+    <!----------Congo popup----------->
+    <div class="modal fade m-0 p-0" id="congratsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered m-0 p-0">
+            <div class="modal-content m-0 p-0">
+                <div class="modal-header congo-header">
+                    <h5 class="modal-title fs-14 fw-600" id="exampleModalLabel"></h5>
+                    <button class="close" data-toggle="modal" data-target="#paymentDetails" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <p class="fs-16 fw-600">Congratulations, this is a ZERO-commission booking!</p>
+                    <h6 class="my-3 fs-13">Pay the supplier directly through any of the following payment modes. We recommend you save/screenshot the payment receipt for any references.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Congo popup----------->
+
+    <!-----------------------Payment details------------------------->
+    <div class="modal fade" id="paymentDetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header pro-forma p-2 py-3 d-flex align-items-center enq-header px-3">
+                    <h5 class="modal-title fs-14 fw-600" id="exampleModalLabel">Payment Details</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body pb-0">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <p class="accordion-header" id="headingOne">
+                                <button class="accordion-button payment-btn w-100 d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <span><img class="img-fluid" src="./image/Apple_Pay-Logo.wine.svg" width="55" alt=""></span> <span><i class="fas fa-chevron-down text-gray"></i></span>
+                        </button>
+                            </p>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="accordion-body my-3">
+                                    <input type="text" class="form-control fs-13" placeholder="Apple ID" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <p class="accordion-header" id="headingTwo">
+                                <button class="accordion-button payment-btn w-100 collapsed d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  <span><img class="img-fluid" src="./image/PayPal-Logo.wine.svg" width="55" alt=""></span> <span><i class="fas fa-chevron-down text-gray"></i></span>
+                        </button>
+                            </p>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="accordion-body my-3">
+                                    <input type="text" class="form-control fs-13" placeholder="Paypal ID" disabled>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item ">
+                            <p class="accordion-header" id="headingThree">
+                                <button class="accordion-button payment-btn w-100 collapsed d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  <span><img class="img-fluid" src="./image/Google_Pay-Logo.wine.svg" width="55" alt=""></span> <span><i class="fas fa-chevron-down text-gray"></i></span>
+                        </button>
+                            </p>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="accordion-body my-3">
+                                    <input type="text" class="form-control fs-13" placeholder="GPay ID" disabled>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <p class="accordion-header" id="headingFour">
+                                <button class="accordion-button border-none payment-btn w-100 pb-2 mt-2 collapsed d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  <span><img class="img-fluid" src="./image/museum.png" width="20" alt=""></span> <span><i class="fas fa-chevron-down text-gray"></i></span>
+                      </button>
+                            </p>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="accordion-body my-3">
+                                    <input type="text" class="form-control fs-13" placeholder="Account Number" disabled>
+                                    <input type="text" class="form-control fs-13 mt-3" placeholder="Bank Name" disabled>
+                                    <input type="text" class="form-control fs-13 mt-3" placeholder="Branch Name" disabled>
+                                    <input type="text" class="form-control fs-13 mt-3" placeholder="IFSC" disabled>
+                                    <input type="text" class="form-control fs-13 mt-3" placeholder="BIC/SWIFT Code" disabled>
+                                    <input type="text" class="form-control fs-13 mt-3" placeholder="Account Holder's Name" disabled>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <label for="paycheck" class="d-flex align-items-center">
+                       <input type="checkbox" class="mr-2 pr-2"  name="" id="paycheck">
+                       I have saved/screenshot the payment receipt.
+                     </label>
+                    </div>
+
+                    <div class="mt-4 mb-3">
+                        <div class="box p-3">
+                            <p class="text-center fw-600 fs-14 mb-3">Booking Details</p>
+                            <p class="mb-1">Service Provider: <span>Rajamala Resort, Munnar</span></p>
+                            <div class="row mt-1">
+                                <div class="col-12">
+                                    <p>Check-in Date: 27-08-2021</p>
+                                    <p class="mt-1">Check-out Date: 27-08-2021</p>
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col-12">
+                                    <p>Room Category(s): Deluxe, Standard</p>
+                                    <p class="mt-1">No. of Rooms: 3</p>
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col-12">
+                                    <p>Invoice amount: INR 7500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-4 mx-3">
+                    <button type="button" class="btn submit-btn fs-12 white w-100 paynow py-2" data-toggle="modal" data-target="#paymentDetails2" data-dismiss="modal">Click here after completing the payment <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-----------------------Payment details------------------------->
+
+
+    <!-------------------Payment Details second screen------------------------->
+    <div class="modal fade" id="paymentDetails2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header pro-forma p-2 py-3 d-flex align-items-center enq-header px-3">
+                    <h5 class="modal-title fs-14 fw-600" id="exampleModalLabel">Payment Details</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="white">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body pb-0">
+                    <form action="">
+                        <input type="text" class="form-control fs-13 mt-3" placeholder="Amount Paid">
+                        <select name="" id="" class="form-control fs-13 mt-3">
+                     <option value="">Payment Methods</option>
+                     <option value="">UPI</option>
+                     <option value="">Apple Pay</option>
+                     <option value="">Paypal</option>
+                     <option value="">Bank Payment</option>
+                   </select>
+                        <textarea name="" id="" cols="" rows="3" class="form-control fs-13 mt-3" placeholder="Add Note"></textarea>
+                        <input type="file" name="" class="form-control fs-13 mt-3" id="">
+                    </form>
+                </div>
+                <div class="my-4 mx-3 text-center">
+                    <button type="button" class="btn btn-secondary  fs-12 white paynow py-2" data-toggle="modal" data-target="" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn submit-btn  fs-12 white paynow py-2" data-toggle="modal" data-target="#congratsModal2" data-dismiss="modal">Send Reciept</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-------------------Payment Details second screen------------------------->
+
+    <!----------Congo popup 2----------->
+    <div class="modal fade m-0 p-0" id="congratsModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered m-0 p-0">
+            <div class="modal-content m-0 p-0">
+                <div class="modal-header congo-header">
+                    <h5 class="modal-title fs-14 fw-600" id="exampleModalLabel"></h5>
+                    <button class="close" data-toggle="modal" data-target="#enquiryPopChat" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <p class="fs-16 fw-600">Congratulations, your booking has been reserved!</p>
+                    <h6 class="my-3 fs-13">You will receive a booking confirmation via email as soon as Rajamala Resort receives your payment.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Congo popup 2----------->
+
+    <!------------------Enquiry chat screen------------------------->
+    <div class="modal fade" id="enquiryPopChat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog mt-3 modal-dialog-centered pb-3 modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-none chat-screen-header w-100 pt-4">
+                    <div class="my-2 w-100 chatscreen-data mt-4" id="list1">
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <div class="list-img2">
+                                    <img class="img-fluid" src="./image/hotel-logo.jpg" alt="profile-picture">
+                                </div>
+                            </div>
+                            <div class="col-9 pl-0">
+                                <div class="chat-content">
+                                    <span class="d-flex justify-content-between align-items-center">
+                                    <p class="fw-600">Rajamala Resort</p>
+                                    <p class="fs-12">UEN1105</p>
+                                </span>
+                                    <p class="fs-12 d-flex align-items-center"><span><img src="./image/Flag_of_India.svg" class="img-fluid mr-2" width="15" alt=""></span>Kerala, India</p>
+                                    <p class="fs-12 mt-1"><img class="img-fluid" src="./image/phone-call.svg" width="15" alt=""> +91 987 654 3220</p>
+                                    <p class="fs-12 mt-1"><img class="img-fluid" src="./image/email.svg" width="15" alt=""> rajamalaresort@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="close chat-close-acc" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body chat-height p-0">
+                    <div class=" stamping mt-2">
+                        <p class="p-1 fs-10">requested to cancel booking [BK7] on 09-Sept-2021 5:17 PM</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                        <div class="col-2 pl-0 chat-img">
+                            <img class="img-fluid" width="" src="./image/hotel-logo.jpg" alt="profile-picture">
+                        </div>
+                        <div class="col-10 pl-0">
+                            <div class="bubble">
+
+                                <p class="">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <p class="fs-10 text-gray py-1">07-Sep-2021 10:30 AM</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 ">
+                        <div class="col-10  d-flex flex-column justify-content-end align-items-end">
+                            <div class="bubble-right">
+                                <p class="">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <p class="fs-10 text-gray py-1">07-Sep-2021 10:31 AM</p>
+                        </div>
+                        <div class="col-2 pl-0 chat-img">
+                            <img class="img-fluid" width="" src="./image/explorer-hat.svg" alt="profile-picture">
+                        </div>
+                    </div>
+                    <div class=" stamping mt-2">
+                        <p class="p-1 fs-10">requested to cancel booking [BK8] on 10-Sept-2021 5:17 PM</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                        <div class="col-2 pl-0 chat-img">
+                            <img class="img-fluid" width="" src="./image/hotel-logo.jpg" alt="profile-picture">
+                        </div>
+                        <div class="col-10 pl-0">
+                            <div class="bubble">
+
+                                <p class="">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <p class="fs-10 text-gray py-1">07-Sep-2021 10:30 AM</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 ">
+                        <div class="col-10  d-flex flex-column justify-content-end align-items-end">
+                            <div class="bubble-right">
+
+                                <p class="">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <p class="fs-10 text-gray py-1">07-Sep-2021 10:31 AM</p>
+                        </div>
+                        <div class="col-2 pl-0 chat-img">
+                            <img class="img-fluid" width="" src="./image/explorer-hat.svg" alt="profile-picture">
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                        <div class="col-2 pl-0 chat-img">
+                            <img class="img-fluid" width="" src="./image/hotel-logo.jpg" alt="profile-picture">
+                        </div>
+                        <div class="col-10 pl-0">
+                            <div class="bubble">
+                                <a href="#" data-toggle="modal" data-target="#quotesDetails" data-dismiss="modal"> <img class="img-fluid" src="./image/invoice.svg" width="50" alt=""></a>
+                            </div>
+                            <p class="fs-10 text-gray py-1">07-Sep-2021 10:30 AM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex  pt-3 pb-3  align-items-center chat-footer">
+                    <div class="col-2 pr-0">
+                        <div class="file-attach">
+                            <input type="file">
+                            <img src="./image/add.svg" class="upload-img5" alt="">
+                        </div>
+                    </div>
+                    <div class="col-7 pl-0 pr-1">
+                        <input type="text" class="form-control w-100 fs-13 border-none chat-type" placeholder="Type here">
+                    </div>
+                    <div class="col-3 d-flex justify-content-end pl-0">
+                        <div class="attach mr-2">
+                            <img class="img-fluid" src="./image/send.svg" alt="">
+                        </div>
+                        <div class="attach">
+                            <img class="img-fluid" src="./image/mic.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------Enquiry chat screen------------------------->
+
+    <script>
+        $('.add').click(function() {
+            var th = $(this).closest('.wrap').find('.count');
+            th.val(+th.val() + 1);
+        });
+        $('.sub').click(function() {
+            var th = $(this).closest('.wrap').find('.count');
+            if (th.val() > 0) th.val(+th.val() - 1);
+        });
+    </script>
+
+
+    <!----Banner End----->
+
+    <!-----Script----->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+    <script src="./js/owl.carousel.min.js "></script>
+    <script src="./js/jquery.mousewheel.min.js "></script>
+    <script src="./js/accommodationTimeline.js "></script>
+
+</body>
+
+</html>
