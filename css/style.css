@@ -8011,15 +8011,6 @@ label {
     background-color: #fff;
 }
 
-.bottom-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background: #fff;
-    border: none;
-}
-
 .bottom-nav ul li {
     display: flex;
     justify-content: center;
@@ -9385,4 +9376,43 @@ button:focus {
 a:focus {
     box-shadow: none !important;
     outline: none !important;
+}
+
+#cycler .banner-7 {
+    object-position: calc(60%);
+}
+
+#cycler .banner-3 {
+    object-position: left;
+}
+
+.acc-caption {
+    position: relative;
+}
+
+.acc-caption .carousel-caption {
+    position: absolute;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.acc-caption .carousel-caption p {
+    color: white;
+    font-weight: 600;
+}
+
+.acc-price-tag {
+    border: 1px solid #ffcc00;
+    border-radius: 4px;
+    padding: 2px 8px;
+}
+
+.bottom-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #f9f9f9;
+    border: none;
 }
