@@ -9408,6 +9408,14 @@ a:focus {
     -webkit-box-orient: vertical !important;
 }
 
+.visitors-review {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+}
+
 .review-pro-pic {
     height: 50px;
     width: 50px;
@@ -9440,11 +9448,30 @@ a:focus {
     border: 1px solid #ced4da;
 }
 
-
-/* .category-map {
+.classification {
     border: 1px solid #ffcc00;
-    width: fit-content;
-    padding: 2px 5px;
     border-radius: 4px;
-    font-size: 12px !important;
-} */
+    padding: 2px 5px;
+    font-size: 10px !important;
+    font-weight: 600;
+}
+
+.activity-list-main {
+    display: flex;
+}
+
+.activity-list-main li {
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.quote:hover {
+    background-color: #362c64;
+    color: white !important;
+}
