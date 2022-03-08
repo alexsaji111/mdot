@@ -407,3 +407,19 @@ function zoomEnable() {
     $('head meta[name=viewport]').remove();
     $('head').prepend('<meta name="viewport" content="user-scalable=1" />');
 }
+
+
+/*====================07/03/2022==================*/
+
+$('.ok-button').hide();
+
+$('.edit-button,.ok-button').on('click', function() {
+
+    $('.edit-button,.ok-button').toggle()
+});
+$('.ok-button2').hide();
+
+$('.edit-button2,.ok-button2').on('click', function() {
+
+    $('.edit-button2,.ok-button2').toggle()
+});

@@ -110,12 +110,22 @@
 
                 <!---Destination Description-->
                 <div id="destinationDesc" class="modal fade">
-                    <div class="modal-dialog modal-sm modal-dialog-centered suggested-dialog">
+                    <div class="modal-dialog modal-sm modal-dialog-centered detailed-description">
                         <div class="modal-content">
                             <div class="modal-body">
-                                <a class="btn-close search-close-destination" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fs-16 text-color"></i></a>
-                                <p class="text-center fw-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus suscipit, dicta fugit quo culpa repellendus ab illo exercitationem reprehenderit voluptatum aspernatur quaerat deserunt, eum dignissimos consectetur
+                                <div class="d-flex justify-content-between align-items-center border-bottom pb-2">
+                                    <p class="fw-800 fs-14">Destination Description</p>
+                                    <a class="btn-close search-close-destination" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fs-14 text-color"></i></a>
+                                </div>
+
+                                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus suscipit, dicta fugit quo culpa repellendus ab illo exercitationem reprehenderit voluptatum aspernatur quaerat deserunt, eum dignissimos consectetur
                                     delectus labore repellat, impedit inventore? Aliquam dicta deleniti a nobis, molestiae temporibus excepturi nulla eligendi possimus iusto odit at quia unde fugiat nemo.</p>
+
+
+                                <p class="fw-800 fs-14 mt-4 border-bottom pb-2">Detailed Description</p>
+                                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus suscipit, dicta fugit quo culpa repellendus ab illo exercitationem reprehenderit voluptatum aspernatur quaerat deserunt, eum dignissimos consectetur
+                                    delectus labore repellat, impedit inventore? Aliquam dicta deleniti a nobis, molestiae temporibus excepturi nulla eligendi possimus iusto odit at quia unde fugiat nemo. </p>
+
                             </div>
                         </div>
                     </div>
@@ -129,7 +139,7 @@
                             <div class="ml-3 p-0">
                                 <div class="row align-items-center justify-content-between warning">
                                     <div class="col-4  security-img  d-flex align-items-center justify-content-center">
-                                        <a href="#" data-toggle="modal" data-target="#exampleModal4"><img src="./image/security.svg" class="" width="25" alt=""></a>
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal4"><img src="./image/security.svg" class="" width="15" alt=""></a>
                                     </div>
                                     <div class="col-8 warning-head pr-0">
                                         <a href="#" data-toggle="modal" data-target="#exampleModal4">
@@ -142,7 +152,7 @@
                             <div class="mx-3  p-0">
                                 <div class="row align-items-center justify-content-between warning ml-4">
                                     <div class="col-4  pl-4  warning-img px-4 d-flex align-items-center justify-content-center">
-                                        <a href="#"><img src="./image/red-cross.svg" class="" width="25" alt=""></a>
+                                        <a href="#"><img src="./image/red-cross.svg" class="" width="15" alt=""></a>
                                     </div>
                                     <div class="col-8 warning-head pr-0">
                                         <a href="#">
@@ -194,15 +204,25 @@
                     <div class="activity d-flex justify-content-between align-items-center">
                         <button class="contribute-edit" data-toggle="modal" data-target="#contributeModal"><img src="image/puzzle.svg" class="add-btn add-btn1">Contribute to the
                             Page</button>
-                        <span class="social-btn"><a href="#" class="text-color"><i class="fas fa-share-alt mr-2"></i> Share</a></span>
+                        <span class="social-activity"><a href="#" class="text-color"><img src="./image/share (1).svg" width="15" alt=""></a></span>
                     </div>
                     <div class="activity d-flex justify-content-between align-items-center py-3">
-                        <button class="travel " data-target="#" data-toggle="modal"><img src="image/add sign.png" class="add-btn"> Add to an Itinerary</button>
-                        <span class="social-btn"><a href="#" class="text-color"><i class="far fa-user mr-2"></i> Follow</a></span>
+                        <button class="travel " data-target="#" data-toggle="modal"><img src="./image/add sign.svg" class="add-btn"> Add to an Itinerary</button>
+                        <span class="social-activity"><div class="edit-button">
+                            <img src="./image/follow.svg" width="15" height="15" alt="Edit">
+                            </div>
+                            <div class="ok-button">
+                            <img src="./image/add-friend.svg" width="15" height="15" alt="OK">
+                            </div></span>
                     </div>
                     <div class="activity d-flex justify-content-between align-items-center">
-                        <button class="journal-btn pushme-with-color" data-toggle="modal" data-target="#bucketAdded"> <img src="image/add sign.png" class="add-btn" id="add-btn-remove">Add to My Bucket List</button>
-                        <span class="social-btn"><a href="#" class="text-color"><i class="far fa-heart mr-2"></i> Like</a></span>
+                        <button class="journal-btn pushme-with-color" data-toggle="modal" data-target="#bucketAdded"> <img src="image/add sign.svg" class="add-btn" id="add-btn-remove">Add to My Bucket List</button>
+                        <span class="social-activity"><div class="edit-button2">
+                            <img src="./image/heart (1).svg" width="15" height="15" alt="Edit">
+                            </div>
+                            <div class="ok-button2">
+                            <img src="./image/heart-filll.svg" width="15" height="15" alt="OK">
+                            </div></span>
                     </div>
                 </div>
                 <div class="col-12">
@@ -779,6 +799,17 @@
                     </div>
                 </div>
 
+                <div class="mx-3 my-4">
+                    <p class="blue fs-16 fw-600 border-bottom pb-2 mt-2 mb-4">Page Statistics</p>
+                    <div class="stats p-3">
+                        <p class="d-flex justify-content-between fw-600">Page Visits <span class="fw-500">94</span></p>
+                        <p class="d-flex justify-content-between fw-600 mt-2">Added to Itineraries <span class="fw-500">0</span></p>
+                        <p class="d-flex justify-content-between fw-600 mt-2">Added to Bucket Lists<span class="fw-500">02</span></p>
+                        <p class="d-flex justify-content-between fw-600 mt-2">Likes <span class="fw-500">10</span></p>
+                        <p class="d-flex justify-content-between fw-600 mt-2">Contributions <span class="fw-500">0</span></p>
+                    </div>
+
+                </div>
 
                 <div class=" mx-3 pb-3">
                     <p class="blue fs-16 fw-600 border-bottom pb-2 mt-2 mb-4">Nearby Destinations</p>
@@ -842,18 +873,23 @@
                             <img class="border-radius-round" src="image/surfing.png" alt="">
                             <div>
                                 <h1 class="hname fs-14 mb-1 fw-600 pt-1">Mystery River Resort</h1>
-                                <p>Resort</p>
-                                <p>Munnar , Kerala</p>
+                                <p class="d-flex place"> <img src="https://tripmemo.io/uploads/icons/gif1/in.png" alt="" class=" mr-2  flag">Munnar , India</p>
+                                <p class="category-map">Resort</p>
                                 <p class="pb-1"><i class="fas fa-map-marker-alt mr-2 red"></i><b>75 kms</b></p>
                             </div>
                         </div>
                         <div class="box-2 d-flex accomodation-sec">
                             <img class="border-radius-round" src="image/surfing.png" alt="">
-                            <div>
+                            <div class="w-100">
                                 <h1 class="hname fs-14 mb-1 fw-600 pt-1">Mystery River Resort</h1>
+                                <p class="d-flex place"> <img src="https://tripmemo.io/uploads/icons/gif1/in.png" alt="" class=" mr-2  flag">Munnar , India</p>
+
                                 <p>Resort</p>
-                                <p>Munnar , Kerala</p>
-                                <p class="pb-1"><i class="fas fa-map-marker-alt mr-2 red"></i><b>75 kms</b></p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="pb-1"><i class="fas fa-map-marker-alt mr-2 red"></i><b>75 kms</b>
+                                    </p>
+                                    <p class="fw-800 fs-12 mr-3">₹5000/night</p>
+                                </div>
                             </div>
                         </div>
                         <div class="box-2 d-flex accomodation-sec">
@@ -1200,15 +1236,20 @@
                                                             <img class="img-fluid mr-3" src="./image/explorer-hat.png" width="48" alt="">
 
                                                         </div>
-                                                        <div class="col-10 pl-0 ">
-                                                            <p class="fw-600">Tommy George</p>
-                                                            <p class="d-flex place"> <img src="https://tripmemo.io/uploads/icons/gif1/in.png" alt="" class=" mr-2  flag">Kerala , India</p>
-                                                            <div class="rating-stars">
-                                                                <i class="fa fa-star yellow" aria-hidden="true"></i>
-                                                                <i class="fa fa-star yellow" aria-hidden="true"></i>
-                                                                <i class="fa fa-star yellow" aria-hidden="true"></i>
-                                                                <i class="fa fa-star gray" aria-hidden="true"></i>
-                                                                <i class="fa fa-star gray" aria-hidden="true"></i>
+                                                        <div class="col-10 pl-0 d-flex justify-content-between">
+                                                            <div>
+                                                                <p class="fw-600">Tommy George</p>
+                                                                <p class="d-flex place"> <img src="https://tripmemo.io/uploads/icons/gif1/in.png" alt="" class=" mr-2  flag">Kerala , India</p>
+                                                            </div>
+                                                            <div>
+                                                                <div class="rating-stars">
+                                                                    <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star gray" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star gray" aria-hidden="true"></i>
+                                                                </div>
+                                                                <p class="text-right">12/03/2022</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1226,18 +1267,23 @@
 
                                         <div class="reviews border-bottom pb-3 mt-4">
                                             <div class="row">
-                                                <div class="col-2 pr-0 d-flex align-items-center justify-content-center">
+                                                <div class="col-2 pr-0 d-flex align-items-center justify-content-center review-pro-pic">
                                                     <img class="img-fluid mr-3" src="./image/explorer-hat.png" width="48" alt="">
                                                 </div>
-                                                <div class="col-10 pl-0 ">
-                                                    <p class="fw-600">Christopher</p>
-                                                    <p class="d-flex place"> <img src="https://tripmemo.io/uploads/icons/gif1/in.png" alt="" class=" mr-2  flag">Kerala , India</p>
-                                                    <div class="rating-stars">
-                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
-                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
-                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
-                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
-                                                        <i class="fa fa-star gray" aria-hidden="true"></i>
+                                                <div class="col-10 pl-0 d-flex justify-content-between">
+                                                    <div>
+                                                        <p class="fw-600">Christopher</p>
+                                                        <p class="d-flex place"> <img src="https://tripmemo.io/uploads/icons/gif1/in.png" alt="" class=" mr-2  flag">Kerala , India</p>
+                                                    </div>
+                                                    <div>
+                                                        <div class="rating-stars">
+                                                            <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                            <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                            <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                                                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                                                        </div>
+                                                        <p class="text-right">12/03/2022</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1251,18 +1297,23 @@
                                         </div>
                                         <div class="reviews pb-3 mt-4">
                                             <div class="row">
-                                                <div class="col-2 pr-0 d-flex align-items-center justify-content-center">
+                                                <div class="col-2 pr-0 d-flex align-items-center justify-content-center review-pro-pic">
                                                     <img class="img-fluid mr-3" src="./image/explorer-hat.png" width="48" alt="">
                                                 </div>
-                                                <div class="col-10 pl-0 ">
-                                                    <p class="fw-600">Nolan</p>
-                                                    <p class="d-flex place"> <img src="https://tripmemo.io/uploads/icons/gif1/in.png" alt="" class=" mr-2  flag">Kerala , India</p>
-                                                    <div class="rating-stars">
-                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
-                                                        <i class="fa fa-star yellow" aria-hidden="true"></i>
-                                                        <i class="fa fa-star gray" aria-hidden="true"></i>
-                                                        <i class="fa fa-star gray" aria-hidden="true"></i>
-                                                        <i class="fa fa-star gray" aria-hidden="true"></i>
+                                                <div class="col-10 pl-0 d-flex justify-content-between">
+                                                    <div>
+                                                        <p class="fw-600">Nolan</p>
+                                                        <p class="d-flex place"> <img src="https://tripmemo.io/uploads/icons/gif1/in.png" alt="" class=" mr-2  flag">Kerala , India</p>
+                                                    </div>
+                                                    <div>
+                                                        <div class="rating-stars">
+                                                            <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                            <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                            <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                                                            <i class="fa fa-star gray" aria-hidden="true"></i>
+                                                        </div>
+                                                        <p class="text-right">12/03/2022</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1468,7 +1519,7 @@
                                             will fetch you Polo Points and courtesy on approval by our editorial desk. Go ahead, let's together keep this community growing!</p>
                                         <div class="form-group col-sm-12 p-0">
                                             <select class="w-100 form-control mt-3" name="language" id="language" tabindex="-1" aria-hidden="true">
-                            <option value="">--select language--</option>
+                            <option value="">Contribute in your preferred language.</option>
                             <option value="Afganistan">Afghanistan</option>
    <option value="Albania">Albania</option>
    <option value="Algeria">Algeria</option>
@@ -2331,6 +2382,21 @@
 
 
                         <!--modals-->
+
+                        <script>
+                            $('.ok-button').hide();
+
+                            $('.edit-button,.ok-button').on('click', function() {
+
+                                $('.edit-button,.ok-button').toggle()
+                            });
+                            $('.ok-button2').hide();
+
+                            $('.edit-button2,.ok-button2').on('click', function() {
+
+                                $('.edit-button2,.ok-button2').toggle()
+                            });
+                        </script>
 
 
                         <!-----Script----->
