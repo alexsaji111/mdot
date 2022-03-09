@@ -136,6 +136,10 @@ $(".pushme-with-color").click(function() {
     $(this).text(" ✓ In Bucket List");
     $('#add-btn-remove').hide()
 });
+$(".pushme-with-color2").click(function() {
+    $(this).text(" ✓ In Bucket List");
+    $('#add-btn-remove2').hide()
+});
 
 
 /*==============start rating===========*/

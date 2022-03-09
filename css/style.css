@@ -9475,3 +9475,64 @@ a:focus {
     background-color: #362c64;
     color: white !important;
 }
+
+.tm-id img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.suggested-connections {
+    height: 235px !important;
+}
+
+.rate-tag {
+    color: black;
+    font-weight: 800;
+}
+
+.quote:focus {
+    color: white !important;
+}
+
+.view:focus {
+    background-color: #d1d2d4;
+}
+
+.yellow {
+    color: #ffcc00;
+}
+
+.credentials-data img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.accordion button:focus {
+    background: none;
+}
+
+.journal-btn:focus {
+    background: none;
+}
+
+.travel {
+    background: none !important;
+}
+
+.journal-desc {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+}
+
+.journal-cap {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important;
+}
