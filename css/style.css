@@ -8008,7 +8008,7 @@ label {
     width: 100%;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
     z-index: 999;
-    background-color: #fff;
+    background-color: #f2f2f2 !important;
 }
 
 .bottom-nav ul li {
@@ -9535,4 +9535,53 @@ a:focus {
     display: -webkit-box !important;
     -webkit-line-clamp: 1 !important;
     -webkit-box-orient: vertical !important;
+}
+
+#dltJournal .btn1:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background: #055755;
+    color: #fff !important;
+}
+
+#dltJournal .btn2:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: #6c757d;
+    color: #fff !important;
+}
+
+.fs-9 {
+    font-size: 9px;
+}
+
+.main-tag {
+    /* background-color: #ffcc00; */
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ffcc00;
+}
+
+.acc-itinerary .travel {
+    border-radius: 10px !important;
+}
+
+.acc-itinerary .journal-btn {
+    border-radius: 10px !important;
+}
+
+.contribute-edit:focus {
+    background: none;
+}
+
+.acc-itinerary-btn {
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    background: none;
+    border: 1px solid #ced4da;
+    font-weight: 600;
 }
