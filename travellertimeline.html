@@ -378,7 +378,7 @@
                     </div>
                 </div>
                 <footer class="">
-                    <div class="mx-3 my-2">
+                    <div class="mx-3 my-2 pb-2">
                         <p class="py-2">&copy TripMemo, All Rights Reserved</p>
                     </div>
                 </footer>
@@ -1015,8 +1015,15 @@
     <div class="modal fade" id="enquiryPopChat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog mt-3 modal-dialog-centered pb-3 modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header border-none chat-screen-header w-100 pt-4">
+                <div class="modal-header border-none chat-screen-header w-100 py-1">
                     <div class="my-2 w-100 chatscreen-data" id="list1">
+                        <div class="row justify-content-end new-chat-header">
+                            <div class="col-12 mb-4">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                        </div>
                         <div class="row align-items-center">
                             <div class="col-3">
                                 <div class="list-img2">
@@ -1036,9 +1043,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="close chat-close3" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+
                 </div>
                 <div class="modal-body chat-height p-0">
                     <div class=" stamping mt-2">
@@ -1050,23 +1055,19 @@
                         </div>
                         <div class="col-10 pl-0">
                             <div class="bubble">
-
                                 <p class="">Lorem ipsum dolor sit amet.</p>
                             </div>
                             <p class="fs-10 text-gray py-1">07-Sep-2021 10:30 AM</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mt-3 ">
-                        <div class="col-10  d-flex flex-column justify-content-end align-items-end">
+                        <div class="col-12  d-flex flex-column justify-content-end align-items-end">
                             <div class="bubble-right">
-
                                 <p class="">Lorem ipsum dolor sit amet.</p>
                             </div>
                             <p class="fs-10 text-gray py-1">07-Sep-2021 10:31 AM</p>
                         </div>
-                        <div class="col-2 pl-0 chat-img">
-                            <img class="img-fluid" width="" src="./image/explorer-hat.svg" alt="profile-picture">
-                        </div>
+                        >
                     </div>
                     <div class=" stamping mt-2">
                         <p class="p-1 fs-10">requested to cancel booking [BK8] on 10-Sept-2021 5:17 PM</p>
@@ -1077,31 +1078,27 @@
                         </div>
                         <div class="col-10 pl-0">
                             <div class="bubble">
-
                                 <p class="">Lorem ipsum dolor sit amet.</p>
                             </div>
                             <p class="fs-10 text-gray py-1">07-Sep-2021 10:30 AM</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mt-3 ">
-                        <div class="col-10  d-flex flex-column justify-content-end align-items-end">
+                        <div class="col-12  d-flex flex-column justify-content-end align-items-end">
                             <div class="bubble-right">
-
                                 <p class="">Lorem ipsum dolor sit amet.</p>
                             </div>
                             <p class="fs-10 text-gray py-1">07-Sep-2021 10:31 AM</p>
                         </div>
-                        <div class="col-2 pl-0 chat-img">
-                            <img class="img-fluid" width="" src="./image/explorer-hat.svg" alt="profile-picture">
-                        </div>
+
                     </div>
                     <div class="d-flex align-items-center mt-2">
                         <div class="col-2 pl-0 chat-img">
                             <img class="img-fluid" width="" src="./image/hotel-logo.jpg" alt="profile-picture">
                         </div>
                         <div class="col-10 pl-0">
-                            <div class="bubble">
-                                <a href="#" data-toggle="modal" data-target="#quotesDetails" data-dismiss="modal"> <img class="img-fluid" src="./image/invoice.svg" width="50" alt=""></a>
+                            <div class="bubble invoice-bubble">
+                                <a href="#" data-toggle="modal" data-target="#quotesDetails" data-dismiss="modal"> <img class="img-fluid" src="./image/invoice (2)-01.svg" width="50" alt=""></a>
                             </div>
                             <p class="fs-10 text-gray py-1">07-Sep-2021 10:30 AM</p>
                         </div>
@@ -1119,11 +1116,8 @@
                         <input type="text" class="form-control w-100 fs-13 border-none chat-type" placeholder="Type here">
                     </div>
                     <div class="col-3 d-flex justify-content-end pl-0">
-                        <div class="attach mr-2">
-                            <img class="img-fluid" src="./image/send.svg" alt="">
-                        </div>
                         <div class="attach">
-                            <img class="img-fluid" src="./image/mic.svg" alt="">
+                            <img class="img-fluid" src="./image/send.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -1219,15 +1213,12 @@
                             <img src="./image/add.svg" class="upload-img5" alt="">
                         </div>
                     </div>
-                    <div class="col-7 pl-0 pr-1">
+                    <div class="col-8 pl-0 pr-1">
                         <input type="text" class="form-control w-100 fs-13 border-none chat-type" placeholder="Type here">
                     </div>
-                    <div class="col-3 d-flex justify-content-end pl-0">
-                        <div class="attach mr-2">
-                            <img class="img-fluid" src="./image/send.svg" alt="">
-                        </div>
+                    <div class="col-2 d-flex justify-content-end pl-0">
                         <div class="attach">
-                            <img class="img-fluid" src="./image/mic.svg" alt="">
+                            <img class="img-fluid" src="./image/send.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -1241,7 +1232,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header p-2 d-flex align-items-center enq-header px-3">
-                    <h5 class="modal-title" id="exampleModalLabel">Quote List</h5>
+                    <h5 class="modal-title py-2" id="exampleModalLabel">Quote List</h5>
                     <button class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" class="white ">&times;</span>
                     </button>
@@ -1254,7 +1245,7 @@
                                     <div class="list-img">
                                         <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt=""> </div>
                                 </div>
-                                <div class="col-9 pl-0">
+                                <div class="col-9">
                                     <div class="chat-content">
                                         <span class="d-flex justify-content-between align-items-center">
                                         <p class="fw-600 text-color">Hilltop Resort</p>
@@ -1280,7 +1271,7 @@
                                     <div class="list-img">
                                         <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt=""> </div>
                                 </div>
-                                <div class="col-9 pl-0">
+                                <div class="col-9">
                                     <div class="chat-content">
                                         <span class="d-flex justify-content-between align-items-center">
                                         <p class="fw-600 text-color">Rajamala Resort</p>
@@ -1306,7 +1297,7 @@
                                     <div class="list-img">
                                         <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt=""> </div>
                                 </div>
-                                <div class="col-9 pl-0">
+                                <div class="col-9">
                                     <div class="chat-content">
                                         <span class="d-flex justify-content-between align-items-center">
                                         <p class="fw-600 text-color">Hilltop Resort</p>
@@ -1336,7 +1327,7 @@
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header p-2 d-flex align-items-center enq-header px-3">
-                    <h5 class="modal-title" id="exampleModalLabel">Quotation Details</h5>
+                    <h5 class="modal-title py-2" id="exampleModalLabel">Quotation Preview</h5>
                     <button class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" class="white ">&times;</span>
                     </button>
@@ -1346,12 +1337,12 @@
                         <div class="quotes-details mt-3">
                             <div class="border-bottom pb-3" id="list1">
                                 <div class="row mb-4">
-                                    <div class="col-3 pr-0">
+                                    <div class="col-3">
                                         <div class="list-img">
                                             <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-9 pl-0 text-right">
+                                    <div class="col-9  text-right">
                                         <p class="fw-600 ">Rajamala Resort</p>
                                         <p class="fs-12"> +91 987 654 3220</p>
                                         <p class="fs-12">rajamalaresort@gmail.com</p>
@@ -1415,7 +1406,7 @@
                             <table class="w-100">
                                 <thead class="border-bottom">
                                     <tr>
-                                        <th>Sl.</th>
+                                        <th>Sl. No.</th>
                                         <th>Particulars</th>
                                         <th>Qty</th>
                                         <th>Amount (in INR)</th>
@@ -1467,34 +1458,34 @@
                             <p class="fs-10 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, saepe? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, veritatis.</p>
                             <div class="d-flex justify-content-between mt-2 pt-2 border-top">
                                 <div class="">
-                                    <p>Grand Total</p>
+                                    <p class="fw-600">Grand Total</p>
                                 </div>
                                 <div class="">
-                                    <p class="text-right grand">INR 9000</p>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-2">
-                                <div class="">
-                                    <p>Discount</p>
-                                </div>
-                                <div class="">
-                                    <p class="text-right grand">INR 500</p>
+                                    <p class="text-right grand fw-600">INR 9000</p>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mt-2">
                                 <div class="">
-                                    <p>Total Payable</p>
+                                    <p class="fw-600">Discount</p>
                                 </div>
                                 <div class="">
-                                    <p class="text-right grand">INR 8500</p>
+                                    <p class="text-right grand fw-600">INR 500</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class="">
+                                    <p class="fw-600">Total Payable</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-right grand fw-600">INR 8500</p>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between pb-2 mt-2 border-bottom">
                                 <div class="">
-                                    <p>Advance Requested</p>
+                                    <p class="fw-600">Advance Requested</p>
                                 </div>
                                 <div class="">
-                                    <p class="text-right grand">INR 2000</p>
+                                    <p class="text-right grand fw-600">INR 2000</p>
                                 </div>
                             </div>
                         </div>
@@ -1506,7 +1497,6 @@
                     </div>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-secondary fs-12">Request Revision</button>
                     <button type="button" class="btn submit-btn fs-12 white">Approve & Pay</button>
                 </div>
             </div>
@@ -1835,7 +1825,7 @@
                                         <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="col-9 pl-0">
+                                <div class="col-9">
                                     <div class="chat-content">
                                         <span class="d-flex justify-content-between align-items-center">
                                         <p class="fw-600 text-color">Hilltop Resort</p>
@@ -1862,7 +1852,7 @@
                                         <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="col-9 pl-0">
+                                <div class="col-9">
                                     <div class="chat-content">
                                         <span class="d-flex justify-content-between align-items-center">
                                         <p class="fw-600 text-color">Rajamala Resort</p>
@@ -1889,7 +1879,7 @@
                                         <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="col-9 pl-0">
+                                <div class="col-9">
                                     <div class="chat-content">
                                         <span class="d-flex justify-content-between align-items-center">
                                         <p class="fw-600 text-color">Hilltop Resort</p>
@@ -1919,15 +1909,15 @@
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header p-2 d-flex align-items-center enq-header px-3">
-                    <h5 class="modal-title" id="exampleModalLabel">Booking Invoice</h5>
+                    <h5 class="modal-title py-2" id="exampleModalLabel">Pro Forma Invoice</h5>
                     <button class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" class="white ">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="quotes my-3">
-                        <div class="row invoice-header d-flex justify-content-between">
-                            <div class="col-3 list-img2">
+                        <div class="row invoice-header d-flex justify-content-between align-items-center">
+                            <div class="col-3 list-img2 pr-0">
                                 <img class="img-fluid rounded" src="./image/hotel-logo.jpg" alt=""> </div>
                             <div class="col-9 text-right">
                                 <p class="fw-600 ">Hotel West Loch</p>
@@ -1986,24 +1976,24 @@
 
                         <div class="mt-5">
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="fs-12 text-gray py-2">Total</p>
-                                <p class="fs-12 text-gray">18700.00</p>
+                                <p class="fs-12 text-gray py-2 fw-600">Total</p>
+                                <p class="fs-12 text-gray fw-600">18700.00</p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="fs-12 text-gray py-2">Tax <span class="fs-12">8%</span></p>
-                                <p class="fs-12 text-gray">1496.00</p>
+                                <p class="fs-12 text-gray py-2 fw-600">Tax <span class="fs-12">8%</span></p>
+                                <p class="fs-12 text-gray fw-600">1496.00</p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="fs-12 text-gray py-2">Discount</p>
-                                <p class="fs-12 text-gray">0.00</p>
+                                <p class="fs-12 text-gray py-2 fw-600">Discount</p>
+                                <p class="fs-12 text-gray fw-600">0.00</p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="fs-12 text-gray py-2">Advance/Deposit</p>
-                                <p class="fs-12 text-gray">2500.00</p>
+                                <p class="fs-12 text-gray py-2 fw-600">Advance/Deposit</p>
+                                <p class="fs-12 text-gray fw-600">2500.00</p>
                             </div>
                             <div class="d-flex justify-content-between align-items-center border-top border-bottom mt-2">
-                                <p class="fs-12 text-gray py-2">Balance</p>
-                                <p class="fs-12 text-gray">17696.00</p>
+                                <p class="fs-12 text-gray py-2 fw-600">Balance</p>
+                                <p class="fs-12 text-gray fw-600">17696.00</p>
                             </div>
                         </div>
                         <div class="disclaimer my-2 mt-3">
@@ -2032,7 +2022,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="container px-0" id="view">
-                        <div class="box1 mt-4">
+                        <div class="box1 mt-4 p-3">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class=" d-flex align-items-center">
